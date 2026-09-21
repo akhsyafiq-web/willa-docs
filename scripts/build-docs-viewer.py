@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
-Build docs-viewer.html — satu file HTML statis untuk melihat seluruh isi
-repo dokumentasi ini di browser (sidebar dari SUMMARY.md + konten tiap halaman).
+Build index.html — satu file HTML statis untuk melihat seluruh isi repo
+dokumentasi ini di browser (sidebar dari SUMMARY.md + konten tiap halaman).
+Dinamai index.html supaya bisa langsung di-deploy sebagai static site
+(mis. Vercel) tanpa konfigurasi tambahan.
 
 Jalankan ulang setiap kali ada halaman .md yang berubah/ditambahkan:
 
@@ -9,8 +11,8 @@ Jalankan ulang setiap kali ada halaman .md yang berubah/ditambahkan:
 
 Catatan:
 - Ini BUKAN bagian dari struktur GitBook (tidak didaftarkan di SUMMARY.md),
-  murni alat bantu preview lokal.
-- Path gambar dibiarkan relatif terhadap root repo, jadi docs-viewer.html
+  murni alat bantu preview lokal / output untuk static hosting.
+- Path gambar dibiarkan relatif terhadap root repo, jadi index.html
   harus tetap berada di root repo (sejajar dengan SUMMARY.md) supaya
   assets/*.png tetap tampil.
 - Parser markdown di sini scoped untuk subset sintaks yang dipakai di
@@ -20,7 +22,7 @@ Catatan:
 import os, re, html, json
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), ".."))
-OUT = os.path.join(ROOT, "docs-viewer.html")
+OUT = os.path.join(ROOT, "index.html")
 
 # ---------- markdown helpers ----------
 
