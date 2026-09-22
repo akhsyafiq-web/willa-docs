@@ -534,14 +534,37 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <nav class="breadcrumb">Dokumentasi <span class="crumb-sep">/</span> Fitur <span class="crumb-sep">/</span> Employee Management</nav>
   <header class="page-header">
     <h1>Employee List</h1>
-    <p class="page-description">Panduan penggunaan Employee List.</p>
-    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role badge-muted">semua peran belum ditentukan</span></div>
+    <p class="page-description">Cara membaca dan menggunakan halaman Employee List.</p>
+    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role">hrd</span></div>
   </header>
   <div class="page-body">
-<blockquote class="callout callout-draft">🚧 <strong>Dokumentasi ini sedang dalam tahap pengembangan.</strong> Konten halaman ini akan segera ditambahkan.</blockquote>
+<p>Employee List adalah halaman utama untuk melihat, mencari, dan mengelola seluruh data karyawan yang terdaftar di Willa PMS.</p>
+<h2 id="ringkasan">Ringkasan</h2>
+<p>Di halaman ini Anda bisa mencari karyawan tertentu, memfilter berdasarkan status atau department, menambah karyawan baru, serta membuka aksi lain untuk setiap karyawan melalui menu titik tiga di tabel.</p>
+<h2 id="filter-dan-pencarian">Filter dan pencarian</h2>
+<p>Bagian paling atas halaman berisi alat untuk menyaring data karyawan yang ditampilkan di tabel.</p>
+<ul><li><strong>Search employee...</strong>: field untuk mencari karyawan dengan kata kunci, misalnya nama atau NIP.</li><li><strong>Filter status</strong>: menyaring karyawan berdasarkan status — <code>All Status</code>, <code>Active</code>, <code>Resign</code>, <code>Inactive</code>, atau <code>Archive</code>.</li><li><strong>Filter department</strong>: menyaring karyawan berdasarkan department, mengikuti data department yang terdaftar di <strong>Department Management</strong>.</li><li><strong>+ Add Employee</strong>: tombol untuk menambah karyawan baru.</li></ul>
+<h2 id="kondisi-tampilan">Kondisi tampilan</h2>
+<p>Tampilan tabel berubah tergantung jumlah data karyawan yang ada.</p>
+<h3 id="belum-ada-karyawan">Belum ada karyawan</h3>
+<p>Jika belum ada satu pun karyawan yang terdaftar, tabel kosong dan tombol <strong>+ Add Employee</strong> menjadi cara utama untuk mulai menambahkan data.</p>
+<!-- 🖼️ IMAGE-HINT 01 — assets/01-tabel-employee-kosong.png — Tampilan Employee List saat belum ada data karyawan, dengan tombol +Add Employee -->
+<h3 id="sudah-ada-data">Sudah ada data</h3>
+<p>Setelah ada karyawan yang terdaftar, tabel menampilkan daftar karyawan sesuai filter yang aktif.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/02-tabel-employee-terisi.png" alt="Tabel Employee List berisi data karyawan, dengan kolom Name/NIP, Email, Phone, Status, Active Since, Updated, dan menu titik tiga" loading="lazy"></figure>
+<h3 id="data-sudah-banyak">Data sudah banyak</h3>
+<p>Jika jumlah karyawan melebihi satu halaman tabel, kontrol pagination di bagian bawah (<strong>Previous</strong>, nomor halaman, <strong>Next</strong>) menjadi aktif untuk berpindah antar halaman data.</p>
+<h2 id="kolom-tabel">Kolom tabel</h2>
+<div class="table-wrap"><table><thead><tr><th>Kolom</th><th>Isi</th></tr></thead><tbody><tr><td>Name / NIP</td><td>Nama lengkap karyawan, dengan NIP (Nomor Induk Pegawai) di bawahnya.</td></tr><tr><td>Email</td><td>Alamat email karyawan yang terdaftar.</td></tr><tr><td>Phone</td><td>Nomor telepon karyawan.</td></tr><tr><td>Status</td><td>Status keaktifan karyawan, misalnya <code>Active</code>.</td></tr><tr><td>Active Since</td><td>Tanggal karyawan mulai aktif.</td></tr><tr><td>Updated</td><td>Tanggal data karyawan terakhir diperbarui.</td></tr></tbody></table></div>
+<h2 id="aksi-cepat-menu-titik-tiga">Aksi cepat (menu titik tiga)</h2>
+<p>Setiap baris karyawan punya menu titik tiga (<strong>...</strong>) berisi aksi berikut.</p>
+<ul><li><strong>Detail</strong>: membuka halaman <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-detail">Employee Detail</a> untuk melihat data lengkap karyawan tersebut.</li><li><strong>Download URL Code</strong>: mengunduh kode atau tautan unik milik karyawan tersebut.</li><li><strong>Change Email</strong>: mengubah alamat email yang terdaftar untuk karyawan tersebut.</li><li><strong>Resign</strong>: mengubah status karyawan menjadi <code>Resign</code>.</li><li><strong>Archive</strong>: mengarsipkan data karyawan, memindahkan statusnya menjadi <code>Archive</code>.</li><li><strong>Face Registration</strong>: membuka halaman <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--face-registration">Face Registration</a> untuk mendaftarkan atau memperbarui data wajah karyawan.</li></ul>
+<p class="text-small">Detail langkah dari masing-masing aksi di atas akan dijelaskan lebih lanjut di halaman terkait atau di pembaruan berikutnya.</p>
+<h2 id="lihat-juga">Lihat juga</h2>
+<ul><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--README">Employee Management</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-detail">Employee Detail</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--face-registration">Face Registration</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--edit-employee">Edit Employee</a></li></ul>
   </div>
   <footer class="page-footer">
-    <span class="last-updated">Terakhir diperbarui: 2026-09-21</span>
+    <span class="last-updated">Terakhir diperbarui: 2026-09-22</span>
   </footer>
 </section>
 

@@ -131,6 +131,15 @@ def render_body(body, base_dir):
                 block.append(lines[i]); i += 1
             if i < n: block.append(lines[i]); i += 1
             out.append(render_details(block, base_dir)); continue
+        if stripped.startswith("<!--"):
+            # HTML comment (mis. hint embed gambar) — teruskan apa adanya,
+            # tidak di-escape, sehingga tetap invisible di halaman ter-render.
+            block = [lines[i]]
+            while i < n and "-->" not in block[-1]:
+                i += 1
+                if i < n: block.append(lines[i])
+            i += 1
+            out.append("\n".join(block)); continue
         if stripped.startswith("<small>"):
             inner = re.sub(r"</?small>", "", stripped).strip()
             out.append(f'<p class="text-small">{inline(inner, base_dir)}</p>'); i += 1; continue
