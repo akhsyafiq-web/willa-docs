@@ -21,7 +21,7 @@ Bagian paling atas halaman berisi alat untuk menyaring data karyawan yang ditamp
 - **Search employee...**: field untuk mencari karyawan dengan kata kunci, misalnya nama atau NIP.
 - **Filter status**: menyaring karyawan berdasarkan status — `All Status`, `Active`, `Resign`, `Inactive`, atau `Archive`.
 - **Filter department**: menyaring karyawan berdasarkan department, mengikuti data department yang terdaftar di **Department Management**.
-- **+ Add Employee**: tombol untuk menambah karyawan baru.
+- **+ Add Employee**: tombol untuk menambah karyawan baru. Lihat [Add Employee](add-employee.md).
 
 ## Kondisi tampilan
 

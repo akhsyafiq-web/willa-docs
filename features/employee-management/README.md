@@ -34,6 +34,7 @@ Semua fitur di Willa PMS, termasuk Employee Management, bisa diakses melalui ber
 ## Sub-fitur
 
 - [Employee List](employee-list.md): daftar seluruh karyawan yang terdaftar.
+- [Add Employee](add-employee.md): menambahkan karyawan baru.
 - [Employee Detail](employee-detail.md): rincian data personal satu karyawan.
 - [Face Registration](face-registration.md): pendaftaran data wajah karyawan untuk verifikasi presensi.
 - [Edit Employee](edit-employee.md): mengubah data karyawan yang sudah terdaftar.

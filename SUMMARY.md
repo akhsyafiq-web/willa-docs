@@ -23,6 +23,7 @@
     * [Catatan Fitur](features/shift-management/catatan-fitur.md)
   * [Employee Management](features/employee-management/README.md)
     * [Employee List](features/employee-management/employee-list.md)
+    * [Add Employee](features/employee-management/add-employee.md)
     * [Employee Detail](features/employee-management/employee-detail.md)
     * [Face Registration](features/employee-management/face-registration.md)
     * [Edit Employee](features/employee-management/edit-employee.md)
