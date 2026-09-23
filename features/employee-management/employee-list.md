@@ -2,8 +2,8 @@
 title: Employee List
 description: Cara membaca dan menggunakan halaman Employee List.
 roles: [hrd]
-status: draft
-last_updated: 2026-09-22
+status: published
+last_updated: 2026-09-23
 ---
 
 # Employee List
@@ -29,9 +29,9 @@ Tampilan tabel berubah tergantung jumlah data karyawan yang ada.
 
 ### Belum ada karyawan
 
-Jika belum ada satu pun karyawan yang terdaftar, tabel kosong dan tombol **+ Add Employee** menjadi cara utama untuk mulai menambahkan data.
+Jika belum ada satu pun karyawan yang terdaftar, tabel diganti dengan pesan **No Employee Added** dan tombol **+ Add Employee** menjadi cara utama untuk mulai menambahkan data.
 
-<!-- 🖼️ IMAGE-HINT 01 — assets/01-tabel-employee-kosong.png — Tampilan Employee List saat belum ada data karyawan, dengan tombol +Add Employee -->
+![Tampilan Employee List saat belum ada data karyawan, dengan pesan No Employee Added dan tombol + Add Employee](./assets/01-tabel-employee-kosong.png)
 
 ### Sudah ada data
 
@@ -41,7 +41,7 @@ Setelah ada karyawan yang terdaftar, tabel menampilkan daftar karyawan sesuai fi
 
 ### Data sudah banyak
 
-Jika jumlah karyawan melebihi satu halaman tabel, kontrol pagination di bagian bawah (**Previous**, nomor halaman, **Next**) menjadi aktif untuk berpindah antar halaman data.
+Jika jumlah karyawan melebihi satu halaman tabel, kontrol pagination di bagian bawah (**Previous**, nomor halaman, **Next**) menjadi aktif untuk berpindah antar halaman data, seperti terlihat pada contoh di atas.
 
 ## Kolom tabel
 
@@ -58,16 +58,18 @@ Jika jumlah karyawan melebihi satu halaman tabel, kontrol pagination di bagian b
 
 Setiap baris karyawan punya menu titik tiga (**...**) berisi aksi berikut.
 
-<!-- 🖼️ IMAGE-HINT 03 — assets/03-menu-titik-tiga.png — Menu titik tiga terbuka di salah satu baris karyawan, menampilkan opsi Detail, Download URL Code, Change Email, Resign, Archive, dan Face Registration -->
+![Menu titik tiga terbuka di salah satu baris karyawan, menampilkan opsi Detail, Download URL Code, Change Email, Resign, Archive, dan Face Re-registration](./assets/03-menu-titik-tiga.png)
 
 - **Detail**: membuka halaman [Employee Detail](employee-detail.md) untuk melihat data lengkap karyawan tersebut.
 - **Download URL Code**: mengunduh kode atau tautan unik milik karyawan tersebut.
 - **Change Email**: mengubah alamat email yang terdaftar untuk karyawan tersebut.
 - **Resign**: mengubah status karyawan menjadi `Resign`.
 - **Archive**: mengarsipkan data karyawan, memindahkan statusnya menjadi `Archive`.
-- **Face Registration**: membuka halaman [Face Registration](face-registration.md) untuk mendaftarkan atau memperbarui data wajah karyawan.
+- **Face Re-registration**: membuka halaman [Face Registration](face-registration.md) untuk mendaftarkan ulang data wajah karyawan.
 
 <small>Detail langkah dari masing-masing aksi di atas akan dijelaskan lebih lanjut di halaman terkait atau di pembaruan berikutnya.</small>
+
+> ⚠️ **Perhatian:** Opsi **Archive** ditandai dengan warna berbeda (merah) di aplikasi, menandakan aksi ini perlu dilakukan dengan hati-hati.
 
 ## Lihat juga
 
