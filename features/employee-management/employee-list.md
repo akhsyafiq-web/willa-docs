@@ -58,6 +58,8 @@ Jika jumlah karyawan melebihi satu halaman tabel, kontrol pagination di bagian b
 
 Setiap baris karyawan punya menu titik tiga (**...**) berisi aksi berikut.
 
+<!-- 🖼️ IMAGE-HINT 03 — assets/03-menu-titik-tiga.png — Menu titik tiga terbuka di salah satu baris karyawan, menampilkan opsi Detail, Download URL Code, Change Email, Resign, Archive, dan Face Registration -->
+
 - **Detail**: membuka halaman [Employee Detail](employee-detail.md) untuk melihat data lengkap karyawan tersebut.
 - **Download URL Code**: mengunduh kode atau tautan unik milik karyawan tersebut.
 - **Change Email**: mengubah alamat email yang terdaftar untuk karyawan tersebut.
