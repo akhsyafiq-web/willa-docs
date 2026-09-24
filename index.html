@@ -575,7 +575,7 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <header class="page-header">
     <h1>Add Employee</h1>
     <p class="page-description">Cara menambahkan karyawan baru melalui form bertahap.</p>
-    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role">hrd</span></div>
+    <div class="badges"><span class="badge badge-status status-published">published</span><span class="badge badge-role">hrd</span></div>
   </header>
   <div class="page-body">
 <p>Add Employee dipakai untuk menambahkan karyawan baru ke Willa PMS, dimulai dari tombol <strong>+ Add Employee</strong> di halaman Employee List.</p>
@@ -616,9 +616,37 @@ details.faq .faq-body p:last-child{margin-bottom:0}
 <div class="table-wrap"><table><thead><tr><th>Field</th><th>Wajib</th><th>Isi</th></tr></thead><tbody><tr><td>Auto-generate</td><td>Tidak</td><td>Sakelar untuk membuat nomor kontrak secara otomatis.</td></tr><tr><td>Contract Number</td><td>Ya</td><td>Nomor kontrak karyawan. Terisi otomatis dan tidak bisa diketik selama <strong>Auto-generate</strong> aktif.</td></tr><tr><td>Contract Type</td><td>Ya</td><td>Jenis kontrak, dipilih dari daftar, misalnya <code>Permanent</code>.</td></tr><tr><td>Start Date</td><td>Ya</td><td>Tanggal kontrak mulai berlaku.</td></tr><tr><td>End Date</td><td>Tidak</td><td>Tanggal kontrak berakhir.</td></tr><tr><td>Source</td><td>Ya</td><td>Sumber karyawan, dipilih dari daftar, misalnya <code>Other</code>.</td></tr><tr><td>Requires Probation?</td><td>Tidak</td><td>Sakelar untuk menandai karyawan memerlukan masa percobaan.</td></tr><tr><td>Probation Start</td><td>Ya, jika probation aktif</td><td>Tanggal masa percobaan dimulai.</td></tr><tr><td>Probation End</td><td>Ya, jika probation aktif</td><td>Tanggal masa percobaan berakhir.</td></tr><tr><td>Reason</td><td>Tidak</td><td>Alasan, ditulis dengan teks bebas.</td></tr><tr><td>Notes</td><td>Tidak</td><td>Catatan tambahan, ditulis dengan teks bebas.</td></tr></tbody></table></div>
 <ol><li>Biarkan <strong>Auto-generate</strong> aktif agar nomor kontrak terisi otomatis, atau nonaktifkan untuk mengisinya sendiri.</li><li>Pilih <strong>Contract Type</strong>.</li><li>Isi <strong>Start Date</strong>, dan <strong>End Date</strong> jika diperlukan.</li><li>Pilih <strong>Source</strong>.</li><li>Pada bagian <strong>Probation Details</strong>, aktifkan <strong>Requires Probation?</strong> jika karyawan memerlukan masa percobaan.</li><li>Isi <strong>Probation Start</strong> dan <strong>Probation End</strong>.</li><li>Isi <strong>Reason</strong> dan <strong>Notes</strong> jika diperlukan.</li><li>Ketuk <strong>Next</strong>.</li></ol>
 <p>Anda masuk ke tahap <strong>Salary</strong>.</p>
-<p class="text-small">Detail tahap 4 sampai 7 (Salary, Contacts, Education, dan Summary) akan ditambahkan di pembaruan berikutnya.</p>
+<h3 id="tahap-4-salary">Tahap 4: Salary</h3>
+<p>Tahap <strong>Salary</strong> berisi rincian kompensasi untuk kontrak karyawan.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/06-form-tahap-salary.png" alt="Form tahap Salary berisi field Currency, Base Salary, Allowance, dan Overtime Rate" loading="lazy"></figure>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Wajib</th><th>Isi</th></tr></thead><tbody><tr><td>Currency</td><td>Ya</td><td>Mata uang gaji, dipilih dari daftar. Default <code>IDR</code>.</td></tr><tr><td>Base Salary</td><td>Ya</td><td>Gaji pokok karyawan.</td></tr><tr><td>Allowance</td><td>Ya</td><td>Tunjangan karyawan.</td></tr><tr><td>Overtime Rate</td><td>Ya</td><td>Tarif lembur karyawan.</td></tr></tbody></table></div>
+<ol><li>Pilih <strong>Currency</strong>.</li><li>Isi <strong>Base Salary</strong>, <strong>Allowance</strong>, dan <strong>Overtime Rate</strong>.</li><li>Ketuk <strong>Next</strong>.</li></ol>
+<p>Anda masuk ke tahap <strong>Contacts</strong>.</p>
+<h3 id="tahap-5-contacts">Tahap 5: Contacts</h3>
+<p>Tahap <strong>Contacts</strong> berisi kontak darurat karyawan.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/07-form-tahap-contacts.png" alt="Form tahap Contacts berisi kartu 1st Contact dengan field Contact Name, Contact Relationship, Contact Phone, dan Contact Address" loading="lazy"></figure>
+<blockquote class="callout callout-warning">⚠️ <strong>Perhatian:</strong> Kontak ini akan dihubungi jika terjadi keadaan darurat. Pastikan informasinya benar dan terbaru.</blockquote>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Wajib</th><th>Isi</th></tr></thead><tbody><tr><td>Contact Name</td><td>Ya</td><td>Nama kontak darurat.</td></tr><tr><td>Contact Relationship</td><td>Ya</td><td>Hubungan kontak dengan karyawan, dipilih dari daftar.</td></tr><tr><td>Contact Phone</td><td>Ya</td><td>Nomor telepon kontak darurat. Kode negara dipilih lewat selector bendera di sisi kiri field.</td></tr><tr><td>Contact Address</td><td>Ya</td><td>Alamat kontak darurat.</td></tr></tbody></table></div>
+<ol><li>Isi data pada kartu <strong>1st Contact</strong>.</li><li>Ketuk <strong>+ Add New Emergency Contact</strong> jika ingin menambah kontak darurat lain.</li><li>Ketuk <strong>Next</strong>.</li></ol>
+<p>Anda masuk ke tahap <strong>Education</strong>.</p>
+<h3 id="tahap-6-education">Tahap 6: Education</h3>
+<p>Tahap <strong>Education</strong> berisi riwayat pendidikan dan sertifikasi karyawan.</p>
+<h4 id="education-history">Education History</h4>
+<figure class="doc-image"><img src="features/employee-management/assets/08-form-tahap-education.png" alt="Form tahap Education, bagian Education History dengan kartu 1st Education berisi field Level, Institution Name, Major, Graduated, Start Year, dan End Year" loading="lazy"></figure>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Wajib</th><th>Isi</th></tr></thead><tbody><tr><td>Level</td><td>Ya</td><td>Jenjang pendidikan, dipilih dari daftar, misalnya <code>SD</code>.</td></tr><tr><td>Institution Name</td><td>Ya</td><td>Nama institusi pendidikan.</td></tr><tr><td>Major</td><td>Ya</td><td>Jurusan atau bidang studi.</td></tr><tr><td>Graduated</td><td>Ya</td><td>Sakelar untuk menandai apakah karyawan sudah lulus dari jenjang ini.</td></tr><tr><td>Start Year</td><td>Ya</td><td>Tahun mulai pendidikan.</td></tr><tr><td>End Year</td><td>Tidak</td><td>Tahun selesai pendidikan.</td></tr></tbody></table></div>
+<ol><li>Isi data pada kartu <strong>1st Education</strong>.</li><li>Ketuk <strong>+ Add More Education History</strong> jika ingin menambah riwayat pendidikan lain.</li></ol>
+<h4 id="certification">Certification</h4>
+<p>Bagian <strong>Certification</strong> bersifat opsional — Anda tidak wajib menambahkan riwayat sertifikat.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/09-form-tahap-education-sertifikat.png" alt="Form tahap Education, bagian Certification dengan kartu 1st Certificate berisi field Title, Institution Name, Certification Date, Level, dan unggah file" loading="lazy"></figure>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Wajib</th><th>Isi</th></tr></thead><tbody><tr><td>Title</td><td>Ya</td><td>Nama sertifikat.</td></tr><tr><td>Institution Name</td><td>Ya</td><td>Nama institusi penerbit sertifikat.</td></tr><tr><td>Certification Date</td><td>Ya</td><td>Tanggal sertifikat diterbitkan.</td></tr><tr><td>Level</td><td>Ya</td><td>Tingkat sertifikasi, dipilih dari daftar.</td></tr><tr><td>Choose File</td><td>Tidak</td><td>Unggah file sertifikat.</td></tr></tbody></table></div>
+<ol><li>Ketuk <strong>+ Add More Certificate File</strong> jika ingin menambahkan sertifikat. Lewati langkah ini jika tidak ada.</li><li>Jika kartu sertifikat sudah ditambahkan, isi datanya, atau ketuk ikon tempat sampah di pojok kanan atas kartu untuk menghapusnya.</li><li>Ketuk <strong>Next</strong>.</li></ol>
+<p>Anda masuk ke tahap <strong>Summary</strong>.</p>
+<h3 id="tahap-7-summary">Tahap 7: Summary</h3>
+<p>Tahap <strong>Summary</strong> menampilkan ringkasan seluruh data yang sudah Anda isi, dikelompokkan per kartu sesuai tahap sebelumnya (Basic Information, Identity, Employment Period, Salary Snapshot, Emergency Contact, dan Education History).</p>
+<figure class="doc-image"><img src="features/employee-management/assets/10-form-tahap-summary.png" alt="Tahap Summary menampilkan ringkasan seluruh data karyawan per kartu, dengan tombol edit di setiap kartu dan tombol Submit di bagian bawah" loading="lazy"></figure>
+<ol><li>Periksa kembali data di setiap kartu.</li><li>Jika ada yang perlu diperbaiki, ketuk ikon pensil di pojok kanan atas kartu terkait untuk kembali ke tahap tersebut.</li><li>Jika semua data sudah benar, ketuk tombol <strong>Submit</strong>.</li></ol>
 <h2 id="hasil">Hasil</h2>
-<p>Setelah melengkapi ketujuh tahap, karyawan baru tersimpan dan muncul di <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-list">Employee List</a>.</p>
+<p>Setelah menekan <strong>Submit</strong> pada tahap Summary, karyawan baru tersimpan dan muncul di <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-list">Employee List</a>.</p>
 <h2 id="lihat-juga">Lihat juga</h2>
 <ul><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--README">Employee Management</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-list">Employee List</a></li></ul>
   </div>

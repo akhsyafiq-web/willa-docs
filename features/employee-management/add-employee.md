@@ -2,7 +2,7 @@
 title: Add Employee
 description: Cara menambahkan karyawan baru melalui form bertahap.
 roles: [hrd]
-status: draft
+status: published
 last_updated: 2026-09-24
 ---
 
@@ -134,11 +134,99 @@ Tahap **Period** berisi informasi awal masa kerja karyawan, termasuk kontrak dan
 
 Anda masuk ke tahap **Salary**.
 
-<small>Detail tahap 4 sampai 7 (Salary, Contacts, Education, dan Summary) akan ditambahkan di pembaruan berikutnya.</small>
+### Tahap 4: Salary
+
+Tahap **Salary** berisi rincian kompensasi untuk kontrak karyawan.
+
+![Form tahap Salary berisi field Currency, Base Salary, Allowance, dan Overtime Rate](./assets/06-form-tahap-salary.png)
+
+| Field | Wajib | Isi |
+| ------------- | ----- | --- |
+| Currency | Ya | Mata uang gaji, dipilih dari daftar. Default `IDR`. |
+| Base Salary | Ya | Gaji pokok karyawan. |
+| Allowance | Ya | Tunjangan karyawan. |
+| Overtime Rate | Ya | Tarif lembur karyawan. |
+
+1. Pilih **Currency**.
+2. Isi **Base Salary**, **Allowance**, dan **Overtime Rate**.
+3. Ketuk **Next**.
+
+Anda masuk ke tahap **Contacts**.
+
+### Tahap 5: Contacts
+
+Tahap **Contacts** berisi kontak darurat karyawan.
+
+![Form tahap Contacts berisi kartu 1st Contact dengan field Contact Name, Contact Relationship, Contact Phone, dan Contact Address](./assets/07-form-tahap-contacts.png)
+
+> ⚠️ **Perhatian:** Kontak ini akan dihubungi jika terjadi keadaan darurat. Pastikan informasinya benar dan terbaru.
+
+| Field | Wajib | Isi |
+| ------------------- | ----- | --- |
+| Contact Name | Ya | Nama kontak darurat. |
+| Contact Relationship | Ya | Hubungan kontak dengan karyawan, dipilih dari daftar. |
+| Contact Phone | Ya | Nomor telepon kontak darurat. Kode negara dipilih lewat selector bendera di sisi kiri field. |
+| Contact Address | Ya | Alamat kontak darurat. |
+
+1. Isi data pada kartu **1st Contact**.
+2. Ketuk **+ Add New Emergency Contact** jika ingin menambah kontak darurat lain.
+3. Ketuk **Next**.
+
+Anda masuk ke tahap **Education**.
+
+### Tahap 6: Education
+
+Tahap **Education** berisi riwayat pendidikan dan sertifikasi karyawan.
+
+#### Education History
+
+![Form tahap Education, bagian Education History dengan kartu 1st Education berisi field Level, Institution Name, Major, Graduated, Start Year, dan End Year](./assets/08-form-tahap-education.png)
+
+| Field | Wajib | Isi |
+| ---------------- | ----- | --- |
+| Level | Ya | Jenjang pendidikan, dipilih dari daftar, misalnya `SD`. |
+| Institution Name | Ya | Nama institusi pendidikan. |
+| Major | Ya | Jurusan atau bidang studi. |
+| Graduated | Ya | Sakelar untuk menandai apakah karyawan sudah lulus dari jenjang ini. |
+| Start Year | Ya | Tahun mulai pendidikan. |
+| End Year | Tidak | Tahun selesai pendidikan. |
+
+1. Isi data pada kartu **1st Education**.
+2. Ketuk **+ Add More Education History** jika ingin menambah riwayat pendidikan lain.
+
+#### Certification
+
+Bagian **Certification** bersifat opsional — Anda tidak wajib menambahkan riwayat sertifikat.
+
+![Form tahap Education, bagian Certification dengan kartu 1st Certificate berisi field Title, Institution Name, Certification Date, Level, dan unggah file](./assets/09-form-tahap-education-sertifikat.png)
+
+| Field | Wajib | Isi |
+| ----------------- | ----- | --- |
+| Title | Ya | Nama sertifikat. |
+| Institution Name | Ya | Nama institusi penerbit sertifikat. |
+| Certification Date | Ya | Tanggal sertifikat diterbitkan. |
+| Level | Ya | Tingkat sertifikasi, dipilih dari daftar. |
+| Choose File | Tidak | Unggah file sertifikat. |
+
+1. Ketuk **+ Add More Certificate File** jika ingin menambahkan sertifikat. Lewati langkah ini jika tidak ada.
+2. Jika kartu sertifikat sudah ditambahkan, isi datanya, atau ketuk ikon tempat sampah di pojok kanan atas kartu untuk menghapusnya.
+3. Ketuk **Next**.
+
+Anda masuk ke tahap **Summary**.
+
+### Tahap 7: Summary
+
+Tahap **Summary** menampilkan ringkasan seluruh data yang sudah Anda isi, dikelompokkan per kartu sesuai tahap sebelumnya (Basic Information, Identity, Employment Period, Salary Snapshot, Emergency Contact, dan Education History).
+
+![Tahap Summary menampilkan ringkasan seluruh data karyawan per kartu, dengan tombol edit di setiap kartu dan tombol Submit di bagian bawah](./assets/10-form-tahap-summary.png)
+
+1. Periksa kembali data di setiap kartu.
+2. Jika ada yang perlu diperbaiki, ketuk ikon pensil di pojok kanan atas kartu terkait untuk kembali ke tahap tersebut.
+3. Jika semua data sudah benar, ketuk tombol **Submit**.
 
 ## Hasil
 
-Setelah melengkapi ketujuh tahap, karyawan baru tersimpan dan muncul di [Employee List](employee-list.md).
+Setelah menekan **Submit** pada tahap Summary, karyawan baru tersimpan dan muncul di [Employee List](employee-list.md).
 
 ## Lihat juga
 
