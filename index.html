@@ -430,14 +430,24 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <nav class="breadcrumb">Dokumentasi <span class="crumb-sep">/</span> Fitur</nav>
   <header class="page-header">
     <h1>Shift Management</h1>
-    <p class="page-description">Panduan penggunaan Shift Management.</p>
-    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role badge-muted">semua peran belum ditentukan</span></div>
+    <p class="page-description">Panduan penggunaan fitur Shift Management untuk peran HOD.</p>
+    <div class="badges"><span class="badge badge-status status-published">published</span><span class="badge badge-role">hod</span></div>
   </header>
   <div class="page-body">
-<blockquote class="callout callout-draft">🚧 <strong>Dokumentasi ini sedang dalam tahap pengembangan.</strong> Konten halaman ini akan segera ditambahkan.</blockquote>
+<p>Shift Management adalah kumpulan fitur untuk mengatur jadwal kerja karyawan di Willa PMS.</p>
+<h2 id="ringkasan">Ringkasan</h2>
+<p>Melalui Shift Management, Anda bisa <strong>membuat</strong> jenis shift, <strong>menyusun</strong> jadwal karyawan, dan <strong>meninjau</strong> riwayat presensinya. Ketiga bagian ini saling berkaitan dan dipakai secara berurutan.</p>
+<h2 id="siapa-yang-menggunakan">Siapa yang menggunakan</h2>
+<p>Halaman ini untuk peran HOD.</p>
+<h2 id="prasyarat">Prasyarat</h2>
+<ul><li>Anda login sebagai HOD.</li><li>Anda sudah memahami <a href="javascript:void(0)" class="int-link" data-page="getting-started--peran-dan-hak-akses">Peran dan Hak Akses</a>.</li></ul>
+<h2 id="sub-fitur">Sub-fitur</h2>
+<ul><li><a href="javascript:void(0)" class="int-link" data-page="features--shift-management--shift-type">Shift Type</a>: membuat dan mengelola jenis shift, termasuk jam mulai, jam selesai, pembagian sesi, dan waktu istirahat.</li><li><a href="javascript:void(0)" class="int-link" data-page="features--shift-management--scheduling">Scheduling</a>: menyusun jadwal shift karyawan per tanggal, satu per satu atau banyak sekaligus lewat Bulk Schedule.</li><li><a href="javascript:void(0)" class="int-link" data-page="features--shift-management--log-history">Log History</a>: meninjau riwayat presensi karyawan sebagai hasil jadwal yang sudah berjalan.</li></ul>
+<h2 id="lihat-juga">Lihat juga</h2>
+<ul><li><a href="javascript:void(0)" class="int-link" data-page="features--README">Fitur</a></li><li><a href="javascript:void(0)" class="int-link" data-page="getting-started--peran-dan-hak-akses">Peran dan Hak Akses</a></li><li><a href="javascript:void(0)" class="int-link" data-page="getting-started--akses-aplikasi">Akses aplikasi via browser</a></li></ul>
   </div>
   <footer class="page-footer">
-    <span class="last-updated">Terakhir diperbarui: 2026-09-21</span>
+    <span class="last-updated">Terakhir diperbarui: 2026-09-24</span>
   </footer>
 </section>
 
@@ -445,14 +455,45 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <nav class="breadcrumb">Dokumentasi <span class="crumb-sep">/</span> Fitur <span class="crumb-sep">/</span> Shift Management</nav>
   <header class="page-header">
     <h1>Shift Type</h1>
-    <p class="page-description">Panduan penggunaan Shift Type.</p>
-    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role badge-muted">semua peran belum ditentukan</span></div>
+    <p class="page-description">Cara membuat dan mengelola jenis shift kerja karyawan.</p>
+    <div class="badges"><span class="badge badge-status status-published">published</span><span class="badge badge-role">hod</span></div>
   </header>
   <div class="page-body">
-<blockquote class="callout callout-draft">🚧 <strong>Dokumentasi ini sedang dalam tahap pengembangan.</strong> Konten halaman ini akan segera ditambahkan.</blockquote>
+<p>Shift Type adalah halaman untuk membuat dan mengelola jenis shift kerja, misalnya shift pagi atau shift malam. Shift Type menjadi dasar sebelum Anda menjadwalkan karyawan di halaman <a href="javascript:void(0)" class="int-link" data-page="features--shift-management--scheduling">Scheduling</a>.</p>
+<h2 id="ringkasan">Ringkasan</h2>
+<p>Di halaman ini Anda bisa melihat daftar shift type, mencari berdasarkan nama, memfilter berdasarkan department dan status, serta membuat shift type baru. Saat membuat shift type, Anda menentukan nama shift, department, jam mulai, jam selesai, dan waktu istirahatnya.</p>
+<h2 id="sebelum-memulai">Sebelum memulai</h2>
+<ul><li>Anda login sebagai HOD.</li><li>Anda sudah mengetahui department yang akan memakai shift tersebut.</li></ul>
+<h2 id="langkah-langkah">Langkah-langkah</h2>
+<h3 id="buka-halaman-type">Buka halaman Type</h3>
+<ol><li>Dari menu navigasi, pilih <strong>Type</strong>.</li><li>Halaman <strong>Type</strong> terbuka dan menampilkan daftar shift type beserta filter di bagian atas.</li></ol>
+<figure class="doc-image"><img src="features/shift-management/assets/01-shift-type-list.png" alt="Halaman Type menampilkan daftar shift type, pencarian, filter department dan status, serta tombol Create Shift Type" loading="lazy"></figure>
+<h3 id="baca-tabel-shift-type">Baca tabel shift type</h3>
+<p>Tabel menampilkan kolom berikut.</p>
+<div class="table-wrap"><table><thead><tr><th>Kolom</th><th>Isi</th></tr></thead><tbody><tr><td>Type Name</td><td>Nama jenis shift.</td></tr><tr><td>Department</td><td>Department yang memakai shift ini.</td></tr><tr><td>Time</td><td>Jam mulai sampai jam selesai, plus durasi, misalnya <code>15:00 - 21:00</code> dan <code>6 hrs</code>.</td></tr><tr><td>Collateral</td><td>Penanda <strong>Split</strong> dan <strong>Break</strong> bila shift dibagi sesi atau punya waktu istirahat.</td></tr><tr><td>Status</td><td><strong>Active</strong> atau <strong>Inactive</strong>.</td></tr></tbody></table></div>
+<p>Di bawah tabel ada navigasi halaman: <strong>Previous</strong>, nomor halaman, dan <strong>Next</strong>.</p>
+<h3 id="cari-dan-filter-daftar-shift-type">Cari dan filter daftar shift type</h3>
+<p>Di bagian atas halaman tersedia pencarian dan dua filter.</p>
+<div class="table-wrap"><table><thead><tr><th>Kontrol</th><th>Isi</th></tr></thead><tbody><tr><td>Search by name</td><td>Mencari shift type berdasarkan namanya.</td></tr><tr><td>All Department</td><td>Menampilkan shift type untuk department tertentu, atau semua department.</td></tr><tr><td>All Status</td><td>Menampilkan shift type berdasarkan status <strong>Active</strong> atau <strong>Inactive</strong>.</td></tr></tbody></table></div>
+<h3 id="buat-shift-type-baru">Buat shift type baru</h3>
+<ol><li>Ketuk <strong>Create Shift Type</strong>.</li><li>Dialog <strong>Make Shift Type</strong> terbuka.</li></ol>
+<figure class="doc-image"><img src="features/shift-management/assets/02-make-shift-type-modal.png" alt="Dialog Make Shift Type berisi field Nama Shift, Department, Start Time, Finish Time, Shift Duration, Divide the shift into several sessions, dan Break time" loading="lazy"></figure>
+<ol><li>Isi field pada dialog sesuai tabel berikut.</li></ol>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Wajib</th><th>Isi</th></tr></thead><tbody><tr><td>Nama Shift</td><td>Ya</td><td>Nama jenis shift, misalnya <code>Morning Shift</code>.</td></tr><tr><td>Department</td><td>Ya</td><td>Department yang memakai shift ini.</td></tr><tr><td>Start Time</td><td>Ya</td><td>Jam shift dimulai, memakai format 24 jam.</td></tr><tr><td>Finish Time</td><td>Ya</td><td>Jam shift berakhir, memakai format 24 jam.</td></tr><tr><td>Shift Duration</td><td>Otomatis</td><td>Durasi shift yang dihitung otomatis dari <strong>Start Time</strong> dan <strong>Finish Time</strong>, misalnya <code>0j 0m</code>.</td></tr><tr><td>Divide the shift into several sessions</td><td>Tidak</td><td>Sakelar untuk membagi shift menjadi beberapa sesi.</td></tr><tr><td>Break time</td><td>Tidak</td><td>Waktu istirahat di dalam shift.</td></tr></tbody></table></div>
+<ol><li>Ketuk <strong>Create a New Shift</strong> untuk menyimpan, atau <strong>Cancel</strong> untuk membatalkan.</li></ol>
+<p class="text-small"><strong>Shift Duration</strong> terisi otomatis setelah Anda mengisi <strong>Start Time</strong> dan <strong>Finish Time</strong>.</p>
+<blockquote class="callout callout-warning">⚠️ <strong>Perhatian:</strong> Aktifkan <strong>Divide the shift into several sessions</strong> hanya jika satu shift punya lebih dari satu sesi kerja. Untuk shift biasa, biarkan nonaktif.</blockquote>
+<h3 id="kelola-shift-type-yang-sudah-ada">Kelola shift type yang sudah ada</h3>
+<p>Tiap baris punya menu aksi (ikon tiga titik) di ujung kanan.</p>
+<figure class="doc-image"><img src="features/shift-management/assets/03-row-action-menu.png" alt="Menu aksi baris shift type berisi Edit, Detail, dan Inactive" loading="lazy"></figure>
+<div class="table-wrap"><table><thead><tr><th>Aksi</th><th>Fungsi</th></tr></thead><tbody><tr><td>Edit</td><td>Mengubah data shift type.</td></tr><tr><td>Detail</td><td>Melihat rincian shift type.</td></tr><tr><td>Inactive</td><td>Menonaktifkan shift type. Shift type yang nonaktif tidak bisa dipakai untuk jadwal baru.</td></tr></tbody></table></div>
+<h2 id="hasil">Hasil</h2>
+<p>Shift type baru tersimpan dan muncul di daftar halaman <strong>Type</strong>. Shift type tersebut siap dipakai saat Anda menjadwalkan karyawan di halaman <a href="javascript:void(0)" class="int-link" data-page="features--shift-management--scheduling">Scheduling</a>.</p>
+<h2 id="lihat-juga">Lihat juga</h2>
+<ul><li><a href="javascript:void(0)" class="int-link" data-page="features--shift-management--README">Shift Management</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--shift-management--scheduling">Scheduling</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--shift-management--log-history">Log History</a></li></ul>
   </div>
   <footer class="page-footer">
-    <span class="last-updated">Terakhir diperbarui: 2026-09-21</span>
+    <span class="last-updated">Terakhir diperbarui: 2026-09-24</span>
   </footer>
 </section>
 
@@ -460,14 +501,46 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <nav class="breadcrumb">Dokumentasi <span class="crumb-sep">/</span> Fitur <span class="crumb-sep">/</span> Shift Management</nav>
   <header class="page-header">
     <h1>Scheduling</h1>
-    <p class="page-description">Panduan penggunaan Scheduling.</p>
-    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role badge-muted">semua peran belum ditentukan</span></div>
+    <p class="page-description">Cara menyusun jadwal shift karyawan dalam rentang tanggal tertentu.</p>
+    <div class="badges"><span class="badge badge-status status-published">published</span><span class="badge badge-role">hod</span></div>
   </header>
   <div class="page-body">
-<blockquote class="callout callout-draft">🚧 <strong>Dokumentasi ini sedang dalam tahap pengembangan.</strong> Konten halaman ini akan segera ditambahkan.</blockquote>
+<p>Scheduling adalah halaman untuk menyusun jadwal shift karyawan di Willa PMS. Anda memakai halaman ini untuk menetapkan shift setiap karyawan pada setiap tanggal.</p>
+<h2 id="ringkasan">Ringkasan</h2>
+<p>Halaman Scheduling menampilkan tabel dengan kolom <strong>Karyawan</strong> dan kolom tanggal. Anda bisa mengganti periode, memfilter berdasarkan department, memilih mode tampilan, dan mengisi shift pada sel tanggal. Shift yang bisa dipilih berasal dari shift type yang sudah dibuat, lihat <a href="javascript:void(0)" class="int-link" data-page="features--shift-management--shift-type">Shift Type</a>.</p>
+<h2 id="sebelum-memulai">Sebelum memulai</h2>
+<ul><li>Anda login sebagai HOD.</li><li>Minimal satu shift type sudah dibuat, lihat <a href="javascript:void(0)" class="int-link" data-page="features--shift-management--shift-type">Shift Type</a>.</li><li>Anda sudah mengetahui department dan periode yang akan dijadwalkan.</li></ul>
+<h2 id="langkah-langkah">Langkah-langkah</h2>
+<h3 id="buka-halaman-scheduling">Buka halaman Scheduling</h3>
+<ol><li>Dari menu navigasi, pilih <strong>Scheduling</strong>.</li><li>Halaman <strong>Scheduling</strong> terbuka dan menampilkan tabel jadwal beserta kontrol di bagian atas.</li></ol>
+<figure class="doc-image"><img src="features/shift-management/assets/04-scheduling-grid.png" alt="Halaman Scheduling menampilkan tabel dengan kolom Karyawan dan kolom tanggal, serta kontrol Period, Daily, All Departments, Bulk Schedule, dan periode" loading="lazy"></figure>
+<h3 id="kenali-kontrol-halaman">Kenali kontrol halaman</h3>
+<p>Sebelum menjadwalkan, kenali kontrol yang tersedia di bagian atas halaman.</p>
+<div class="table-wrap"><table><thead><tr><th>Kontrol</th><th>Fungsi</th></tr></thead><tbody><tr><td>Period / Daily</td><td>Mode tampilan jadwal. <strong>Period</strong> menampilkan rentang tanggal penuh, <strong>Daily</strong> menampilkan jadwal per hari.</td></tr><tr><td>All Departments</td><td>Memfilter tabel hanya untuk department tertentu, atau menampilkan semua department.</td></tr><tr><td>Bulk Schedule</td><td>Menetapkan shift untuk banyak karyawan sekaligus.</td></tr><tr><td>Today</td><td>Melompat ke jadwal tanggal hari ini.</td></tr><tr><td>Periode</td><td>Menentukan rentang tanggal yang ditampilkan, misalnya <code>21-30 September 2026</code>.</td></tr></tbody></table></div>
+<h3 id="baca-tabel-jadwal">Baca tabel jadwal</h3>
+<p>Tabel jadwal terdiri dari dua bagian.</p>
+<div class="table-wrap"><table><thead><tr><th>Bagian</th><th>Isi</th></tr></thead><tbody><tr><td>Kolom Karyawan</td><td>Inisial, nama, dan department tiap karyawan.</td></tr><tr><td>Kolom tanggal</td><td>Satu kolom untuk setiap tanggal pada periode, misalnya <code>Mon 21</code> dan <code>Tue 22</code>.</td></tr></tbody></table></div>
+<p>Setiap sel tanggal berisi tombol yang membuka daftar shift. Jika shift type belum dibuat untuk department tersebut, tombol ini tidak aktif dan jadwal tidak bisa diisi.</p>
+<h3 id="isi-shift-pada-sel-tanggal">Isi shift pada sel tanggal</h3>
+<ol><li>Ketuk tombol di dalam sel tanggal untuk karyawan yang dituju.</li><li>Daftar shift yang tersedia terbuka.</li><li>Pilih shift yang ingin ditetapkan pada tanggal tersebut.</li></ol>
+<figure class="doc-image"><img src="features/shift-management/assets/05-shift-dropdown.png" alt="Daftar shift pada sel tanggal berisi shift type yang tersedia, Day Off, dan Unassign" loading="lazy"></figure>
+<p>Selain shift type yang sudah dibuat, daftar ini selalu menyediakan dua pilihan.</p>
+<div class="table-wrap"><table><thead><tr><th>Pilihan</th><th>Fungsi</th></tr></thead><tbody><tr><td>Day Off</td><td>Menandai karyawan libur pada tanggal tersebut.</td></tr><tr><td>Unassign</td><td>Menghapus shift yang sudah ditetapkan pada sel tersebut.</td></tr></tbody></table></div>
+<h3 id="jadwalkan-banyak-karyawan-sekaligus">Jadwalkan banyak karyawan sekaligus</h3>
+<ol><li>Ketuk <strong>Bulk Schedule</strong>.</li><li>Dialog <strong>Bulk Scheduling</strong> terbuka.</li></ol>
+<figure class="doc-image"><img src="features/shift-management/assets/06-bulk-schedule.png" alt="Dialog Bulk Scheduling berisi Date Range, Shift Type, daftar karyawan, dan tombol Assign Shift" loading="lazy"></figure>
+<ol><li>Isi dialog sesuai tabel berikut.</li></ol>
+<div class="table-wrap"><table><thead><tr><th>Bagian</th><th>Isi</th></tr></thead><tbody><tr><td>Date Range</td><td>Rentang tanggal yang akan dijadwalkan.</td></tr><tr><td>Shift Type</td><td>Shift yang akan ditetapkan.</td></tr><tr><td>Select an employee for this shift</td><td>Daftar karyawan yang bisa dipilih. Centang satu atau lebih.</td></tr><tr><td>Selected employee</td><td>Karyawan yang sudah dipilih, beserta jumlahnya.</td></tr></tbody></table></div>
+<ol><li>Ketuk <strong>Assign Shift</strong> untuk menyimpan, atau <strong>Cancel</strong> untuk membatalkan.</li></ol>
+<h3 id="atur-filter-dan-periode">Atur filter dan periode</h3>
+<ol><li>Pilih <strong>All Departments</strong> untuk membatasi tabel pada satu department.</li><li>Sesuaikan periode untuk menampilkan rentang tanggal lain.</li><li>Ketuk <strong>Today</strong> untuk kembali ke jadwal hari ini.</li></ol>
+<h2 id="hasil">Hasil</h2>
+<p>Shift yang sudah diisi tampil pada sel tanggal terkait di tabel jadwal. Setelah jadwal berjalan, hasil presensi karyawan dapat ditinjau di halaman <a href="javascript:void(0)" class="int-link" data-page="features--shift-management--log-history">Log History</a>.</p>
+<h2 id="lihat-juga">Lihat juga</h2>
+<ul><li><a href="javascript:void(0)" class="int-link" data-page="features--shift-management--README">Shift Management</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--shift-management--shift-type">Shift Type</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--shift-management--log-history">Log History</a></li></ul>
   </div>
   <footer class="page-footer">
-    <span class="last-updated">Terakhir diperbarui: 2026-09-21</span>
+    <span class="last-updated">Terakhir diperbarui: 2026-09-24</span>
   </footer>
 </section>
 
@@ -475,14 +548,34 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <nav class="breadcrumb">Dokumentasi <span class="crumb-sep">/</span> Fitur <span class="crumb-sep">/</span> Shift Management</nav>
   <header class="page-header">
     <h1>Log History</h1>
-    <p class="page-description">Panduan penggunaan Log History.</p>
-    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role badge-muted">semua peran belum ditentukan</span></div>
+    <p class="page-description">Cara meninjau riwayat presensi karyawan sebagai hasil jadwal shift.</p>
+    <div class="badges"><span class="badge badge-status status-published">published</span><span class="badge badge-role">hod</span></div>
   </header>
   <div class="page-body">
-<blockquote class="callout callout-draft">🚧 <strong>Dokumentasi ini sedang dalam tahap pengembangan.</strong> Konten halaman ini akan segera ditambahkan.</blockquote>
+<p>Log History adalah halaman <strong>Riwayat Presensi</strong> di Willa PMS. Halaman ini menampilkan rekapitulasi kehadiran karyawan berdasarkan jadwal shift yang sudah berjalan.</p>
+<h2 id="ringkasan">Ringkasan</h2>
+<p>Di halaman ini Anda bisa melihat ringkasan kehadiran dan menelusuri riwayat presensi karyawan. Data dikelompokkan per bulan dan bisa difilter berdasarkan status kehadiran.</p>
+<h2 id="sebelum-memulai">Sebelum memulai</h2>
+<ul><li>Anda login sebagai HOD.</li><li>Karyawan sudah punya jadwal shift, lihat <a href="javascript:void(0)" class="int-link" data-page="features--shift-management--scheduling">Scheduling</a>.</li></ul>
+<h2 id="langkah-langkah">Langkah-langkah</h2>
+<h3 id="buka-halaman-riwayat-presensi">Buka halaman Riwayat Presensi</h3>
+<ol><li>Dari menu navigasi, pilih <strong>History</strong>.</li><li>Halaman <strong>History</strong> terbuka dengan judul <strong>Riwayat Presensi</strong>.</li></ol>
+<figure class="doc-image"><img src="features/shift-management/assets/07-riwayat-presensi.png" alt="Halaman Riwayat Presensi menampilkan kartu ringkasan kehadiran, pemilih bulan, dan tab status" loading="lazy"></figure>
+<h3 id="baca-ringkasan-kehadiran">Baca ringkasan kehadiran</h3>
+<p>Di bagian atas halaman terdapat tiga kartu ringkasan.</p>
+<div class="table-wrap"><table><thead><tr><th>Kartu</th><th>Arti</th></tr></thead><tbody><tr><td>Hadir</td><td>Jumlah kehadiran karyawan pada periode terpilih.</td></tr><tr><td>Terlambat</td><td>Jumlah keterlambatan karyawan pada periode terpilih.</td></tr><tr><td>Absen</td><td>Jumlah ketidakhadiran karyawan pada periode terpilih.</td></tr></tbody></table></div>
+<h3 id="pilih-periode">Pilih periode</h3>
+<ol><li>Ketuk pemilih bulan di bagian atas halaman.</li><li>Pilih bulan yang ingin ditinjau, misalnya <code>September 2026</code>.</li></ol>
+<h3 id="filter-berdasarkan-status">Filter berdasarkan status</h3>
+<p>Riwayat presensi bisa disaring dengan tab berikut.</p>
+<div class="table-wrap"><table><thead><tr><th>Tab</th><th>Isi</th></tr></thead><tbody><tr><td>Semua</td><td>Seluruh riwayat presensi.</td></tr><tr><td>Tepat Waktu</td><td>Presensi yang tercatat tepat waktu.</td></tr><tr><td>Terlambat</td><td>Presensi yang tercatat terlambat.</td></tr><tr><td>Pulang Awal</td><td>Presensi yang tercatat pulang sebelum jam shift berakhir.</td></tr></tbody></table></div>
+<h2 id="hasil">Hasil</h2>
+<p>Riwayat presensi tampil sesuai bulan dan status yang dipilih, sehingga Anda bisa menilai apakah jadwal shift berjalan sebagaimana mestinya.</p>
+<h2 id="lihat-juga">Lihat juga</h2>
+<ul><li><a href="javascript:void(0)" class="int-link" data-page="features--shift-management--README">Shift Management</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--shift-management--shift-type">Shift Type</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--shift-management--scheduling">Scheduling</a></li></ul>
   </div>
   <footer class="page-footer">
-    <span class="last-updated">Terakhir diperbarui: 2026-09-21</span>
+    <span class="last-updated">Terakhir diperbarui: 2026-09-24</span>
   </footer>
 </section>
 
@@ -491,13 +584,18 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <header class="page-header">
     <h1>Catatan Fitur: Shift Management</h1>
     <p class="page-description">Catatan Do &amp; Don't untuk fitur Shift Management.</p>
-    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role badge-muted">semua peran belum ditentukan</span></div>
+    <div class="badges"><span class="badge badge-status status-published">published</span><span class="badge badge-role badge-muted">semua peran belum ditentukan</span></div>
   </header>
   <div class="page-body">
-<blockquote class="callout callout-draft">🚧 <strong>Dokumentasi ini sedang dalam tahap pengembangan.</strong> Konten halaman ini akan segera ditambahkan.</blockquote>
+<h2 id="lakukan">Lakukan</h2>
+<p>✅ Buat <strong>Shift Type</strong> terlebih dahulu sebelum menyusun jadwal di halaman Scheduling. ✅ Isi <strong>Start Time</strong> dan <strong>Finish Time</strong> dengan format 24 jam agar <strong>Shift Duration</strong> terhitung benar. ✅ Periksa periode dan department di halaman Scheduling sebelum mengisi shift. ✅ Gunakan <strong>Bulk Schedule</strong> saat menetapkan shift yang sama untuk banyak karyawan. ✅ Pilih <strong>Day Off</strong> untuk menandai libur, dan <strong>Unassign</strong> untuk menghapus shift yang salah terisi.</p>
+<h2 id="jangan">Jangan</h2>
+<p>❌ Menjadwalkan shift karyawan sebelum shift type untuk department tersebut dibuat. ❌ Mengaktifkan <strong>Divide the shift into several sessions</strong> untuk shift biasa yang tidak punya sesi terpisah. ❌ Membiarkan department pada Shift Type tidak sesuai dengan department tempat karyawan dijadwalkan.</p>
+<h2 id="catatan-tambahan">Catatan tambahan</h2>
+<p>Riwayat presensi pada halaman <a href="javascript:void(0)" class="int-link" data-page="features--shift-management--log-history">Log History</a> adalah hasil dari jadwal yang sudah berjalan. Jika jadwal belum diisi, halaman tersebut akan menampilkan angka nol.</p>
   </div>
   <footer class="page-footer">
-    <span class="last-updated">Terakhir diperbarui: 2026-09-21</span>
+    <span class="last-updated">Terakhir diperbarui: 2026-09-24</span>
   </footer>
 </section>
 
