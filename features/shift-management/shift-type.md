@@ -73,8 +73,6 @@ Di bagian atas halaman tersedia pencarian dan dua filter.
 
 4. Ketuk **Create a New Shift** untuk menyimpan, atau **Cancel** untuk membatalkan.
 
-<small>**Shift Duration** terisi otomatis setelah Anda mengisi **Start Time** dan **Finish Time**.</small>
-
 > ⚠️ **Perhatian:** Aktifkan **Divide the shift into several sessions** hanya jika satu shift punya lebih dari satu sesi kerja. Untuk shift biasa, biarkan nonaktif.
 
 ### Kelola shift type yang sudah ada
