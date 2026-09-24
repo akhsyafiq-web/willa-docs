@@ -592,17 +592,38 @@ details.faq .faq-body p:last-child{margin-bottom:0}
 <ul><li><strong>Create Single by Form</strong>: menambahkan satu karyawan dengan mengisi form secara manual, langkah demi langkah.</li><li><strong>Upload Single Contract (.docx)</strong>: menambahkan satu karyawan dengan mengunggah satu dokumen kontrak.</li><li><strong>Upload Multiple Contracts (.zip)</strong>: menambahkan banyak karyawan sekaligus dengan mengunggah kumpulan dokumen kontrak dalam satu file <code>.zip</code>.</li></ul>
 <p class="text-small">Dokumentasi ini fokus ke Create Single by Form. Detail alur Upload Single Contract dan Upload Multiple Contracts akan ditambahkan di pembaruan berikutnya.</p>
 <h3 id="isi-form-bertahap-create-single-by-form">Isi form bertahap (Create Single by Form)</h3>
-<p>Setelah memilih <strong>Create Single by Form</strong>, Anda mengisi data karyawan melalui tujuh tahap berurutan.</p>
+<p>Setelah memilih <strong>Create Single by Form</strong>, form <strong>Create Employee</strong> terbuka dan Anda mengisi data karyawan melalui tujuh tahap berurutan.</p>
 <figure class="doc-image"><img src="features/employee-management/assets/02-stepper-tujuh-tahap.png" alt="Stepper tujuh tahap pengisian form Add Employee: Basic, Identity, Period, Salary, Contacts, Education, Summary" loading="lazy"></figure>
 <div class="table-wrap"><table><thead><tr><th>Tahap</th><th>Nama</th></tr></thead><tbody><tr><td>1</td><td>Basic</td></tr><tr><td>2</td><td>Identity</td></tr><tr><td>3</td><td>Period</td></tr><tr><td>4</td><td>Salary</td></tr><tr><td>5</td><td>Contacts</td></tr><tr><td>6</td><td>Education</td></tr><tr><td>7</td><td>Summary</td></tr></tbody></table></div>
-<p class="text-small">Detail field yang perlu diisi di setiap tahap akan dijelaskan di pembaruan berikutnya.</p>
+<p>Tahap yang sudah selesai ditandai centang pada stepper. Ketuk <strong>Next</strong> untuk lanjut ke tahap berikutnya, dan <strong>Back</strong> untuk kembali ke tahap sebelumnya.</p>
+<blockquote class="callout callout-info">ℹ️ <strong>Info:</strong> Field yang diberi tanda bintang merah (<code>*</code>) wajib diisi. Field tanpa tanda tersebut bersifat opsional.</blockquote>
+<h3 id="tahap-1-basic">Tahap 1: Basic</h3>
+<p>Tahap <strong>Basic</strong> berisi data identitas utama karyawan.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/03-form-tahap-basic.png" alt="Form tahap Basic berisi field NIP, Full Name, Identity Card Type, Identity Number, Email, Phone Number, Department, Position, dan Marital Status" loading="lazy"></figure>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Wajib</th><th>Isi</th></tr></thead><tbody><tr><td>NIP</td><td>Ya</td><td>Nomor Induk Pegawai karyawan.</td></tr><tr><td>Full Name</td><td>Ya</td><td>Nama lengkap karyawan.</td></tr><tr><td>Identity Card Type</td><td>Ya</td><td>Jenis kartu identitas, dipilih dari daftar.</td></tr><tr><td>Identity Number</td><td>Ya</td><td>Nomor kartu identitas karyawan.</td></tr><tr><td>Email</td><td>Ya</td><td>Alamat email karyawan yang dipakai untuk login.</td></tr><tr><td>Phone Number</td><td>Ya</td><td>Nomor telepon karyawan. Kode negara dipilih lewat selector bendera di sisi kiri field.</td></tr><tr><td>Department</td><td>Ya</td><td>Department tempat karyawan bekerja, dipilih dari daftar.</td></tr><tr><td>Position</td><td>Ya</td><td>Jabatan karyawan, dipilih dari daftar.</td></tr><tr><td>Marital Status</td><td>Ya</td><td>Status pernikahan karyawan, dipilih dari daftar.</td></tr></tbody></table></div>
+<ol><li>Isi semua field pada tahap <strong>Basic</strong>.</li><li>Ketuk <strong>Next</strong>.</li></ol>
+<p>Anda masuk ke tahap <strong>Identity</strong>.</p>
+<blockquote class="callout callout-warning">⚠️ <strong>Perhatian:</strong> Tombol <strong>Discard &amp; Cancel</strong> membatalkan pembuatan karyawan dan membuang data yang sudah Anda isi.</blockquote>
+<h3 id="tahap-2-identity">Tahap 2: Identity</h3>
+<p>Tahap <strong>Identity</strong> berisi data pribadi dan demografis karyawan.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/04-form-tahap-identity.png" alt="Form tahap Identity berisi field Place of Birth, Date of Birth, Gender, Religion, Address, dan Domicile" loading="lazy"></figure>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Wajib</th><th>Isi</th></tr></thead><tbody><tr><td>Place of Birth</td><td>Ya</td><td>Tempat lahir karyawan.</td></tr><tr><td>Date of Birth</td><td>Ya</td><td>Tanggal lahir karyawan, dengan format <code>dd/mm/yyyy</code>.</td></tr><tr><td>Gender</td><td>Ya</td><td>Jenis kelamin karyawan, dipilih dari daftar.</td></tr><tr><td>Religion</td><td>Ya</td><td>Agama karyawan, dipilih dari daftar.</td></tr><tr><td>Address</td><td>Ya</td><td>Alamat karyawan.</td></tr><tr><td>Domicile</td><td>Tidak</td><td>Alamat domisili karyawan.</td></tr></tbody></table></div>
+<ol><li>Isi semua field wajib pada tahap <strong>Identity</strong>.</li><li>Isi <strong>Domicile</strong> jika diperlukan.</li><li>Ketuk <strong>Next</strong>.</li></ol>
+<p>Anda masuk ke tahap <strong>Period</strong>.</p>
+<h3 id="tahap-3-period">Tahap 3: Period</h3>
+<p>Tahap <strong>Period</strong> berisi informasi awal masa kerja karyawan, termasuk kontrak dan masa percobaan.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/05-form-tahap-period.png" alt="Form tahap Period berisi field kontrak, tanggal mulai dan berakhir, Source, bagian Probation Details, Reason, dan Notes" loading="lazy"></figure>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Wajib</th><th>Isi</th></tr></thead><tbody><tr><td>Auto-generate</td><td>Tidak</td><td>Sakelar untuk membuat nomor kontrak secara otomatis.</td></tr><tr><td>Contract Number</td><td>Ya</td><td>Nomor kontrak karyawan. Terisi otomatis dan tidak bisa diketik selama <strong>Auto-generate</strong> aktif.</td></tr><tr><td>Contract Type</td><td>Ya</td><td>Jenis kontrak, dipilih dari daftar, misalnya <code>Permanent</code>.</td></tr><tr><td>Start Date</td><td>Ya</td><td>Tanggal kontrak mulai berlaku.</td></tr><tr><td>End Date</td><td>Tidak</td><td>Tanggal kontrak berakhir.</td></tr><tr><td>Source</td><td>Ya</td><td>Sumber karyawan, dipilih dari daftar, misalnya <code>Other</code>.</td></tr><tr><td>Requires Probation?</td><td>Tidak</td><td>Sakelar untuk menandai karyawan memerlukan masa percobaan.</td></tr><tr><td>Probation Start</td><td>Ya, jika probation aktif</td><td>Tanggal masa percobaan dimulai.</td></tr><tr><td>Probation End</td><td>Ya, jika probation aktif</td><td>Tanggal masa percobaan berakhir.</td></tr><tr><td>Reason</td><td>Tidak</td><td>Alasan, ditulis dengan teks bebas.</td></tr><tr><td>Notes</td><td>Tidak</td><td>Catatan tambahan, ditulis dengan teks bebas.</td></tr></tbody></table></div>
+<ol><li>Biarkan <strong>Auto-generate</strong> aktif agar nomor kontrak terisi otomatis, atau nonaktifkan untuk mengisinya sendiri.</li><li>Pilih <strong>Contract Type</strong>.</li><li>Isi <strong>Start Date</strong>, dan <strong>End Date</strong> jika diperlukan.</li><li>Pilih <strong>Source</strong>.</li><li>Pada bagian <strong>Probation Details</strong>, aktifkan <strong>Requires Probation?</strong> jika karyawan memerlukan masa percobaan.</li><li>Isi <strong>Probation Start</strong> dan <strong>Probation End</strong>.</li><li>Isi <strong>Reason</strong> dan <strong>Notes</strong> jika diperlukan.</li><li>Ketuk <strong>Next</strong>.</li></ol>
+<p>Anda masuk ke tahap <strong>Salary</strong>.</p>
+<p class="text-small">Detail tahap 4 sampai 7 (Salary, Contacts, Education, dan Summary) akan ditambahkan di pembaruan berikutnya.</p>
 <h2 id="hasil">Hasil</h2>
 <p>Setelah melengkapi ketujuh tahap, karyawan baru tersimpan dan muncul di <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-list">Employee List</a>.</p>
 <h2 id="lihat-juga">Lihat juga</h2>
 <ul><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--README">Employee Management</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-list">Employee List</a></li></ul>
   </div>
   <footer class="page-footer">
-    <span class="last-updated">Terakhir diperbarui: 2026-09-23</span>
+    <span class="last-updated">Terakhir diperbarui: 2026-09-24</span>
   </footer>
 </section>
 
