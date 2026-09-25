@@ -40,7 +40,7 @@ Halaman Employee Detail punya navigasi sisi kiri dengan empat menu.
 | Legal Document | Masih dalam pengembangan. |
 | Leave | Masih dalam pengembangan. |
 
-<small>Detail Employment & Contract, serta dokumentasi Legal Document dan Leave setelah tersedia, akan ditambahkan di pembaruan berikutnya.</small>
+<small>Dokumentasi Legal Document dan Leave akan ditambahkan setelah fitur tersebut tersedia.</small>
 
 ### Kartu info umum
 
@@ -87,9 +87,70 @@ Tab **Certification** menampilkan riwayat sertifikat karyawan: nama sertifikat, 
 1. Ketuk tombol **Edit** di pojok kanan atas untuk mengubah data pada tab ini.
 2. Ketuk ikon mata di samping **Document** untuk melihat file sertifikat yang diunggah.
 
+### Employment & Contract
+
+Menu **Employment & Contract** menampilkan data kepegawaian dan kontrak karyawan, dengan tiga tab: **Current Info**, **Contract History**, dan **Contract Documents**. Di pojok kanan atas ada tombol **Create New Contract** dan menu titik tiga.
+
+#### Tab Current Info
+
+Tab **Current Info** menampilkan dua kartu: **Employment Summary** dan **Active Contract**.
+
+![Tab Current Info menampilkan kartu Employment Summary dan Active Contract, dengan tombol Create New Contract dan Extend Contract](./assets/07-tab-current-info.png)
+
+| Kartu | Field | Isi |
+| ------------------ | --------------- | --- |
+| Employment Summary | Current Status | Status kepegawaian karyawan saat ini, misalnya `active`. |
+| Employment Summary | Employment Type | Jenis hubungan kerja, misalnya `permanent`. |
+| Employment Summary | Hire Date | Tanggal karyawan mulai bekerja. |
+| Active Contract | Contract ID | Nomor kontrak aktif, disertai status. |
+| Active Contract | Employment Type | Jenis kontrak. |
+| Active Contract | Start Date | Tanggal kontrak mulai berlaku. |
+| Active Contract | End Date | Tanggal kontrak berakhir. |
+| Active Contract | Salary | Gaji pada kontrak ini, disamarkan secara default. |
+| Active Contract | Department | Department karyawan pada kontrak ini. |
+| Active Contract | Position | Jabatan karyawan pada kontrak ini. |
+
+1. Ketuk ikon mata di samping **Salary** untuk menampilkan nominal gaji.
+2. Ketuk **Extend Contract** untuk memperpanjang kontrak aktif.
+
+#### Tab Contract History
+
+Tab **Contract History** menampilkan riwayat seluruh kontrak karyawan dalam bentuk tabel: Contract No, Type, Start Date, End Date, Status, dan Action.
+
+![Tab Contract History menampilkan tabel riwayat kontrak dengan kolom Contract No, Type, Start Date, End Date, Status, dan Action](./assets/08-tab-contract-history.png)
+
+1. Ketuk ikon pada kolom **Action** untuk membuka detail kontrak tersebut.
+
+#### Tab Contract Documents
+
+Tab **Contract Documents** menampilkan dokumen kontrak yang sudah diunggah, dalam bentuk tabel: Type, File, Uploaded At, dan Uploaded By.
+
+![Tab Contract Documents menampilkan tabel dokumen dengan kolom Type, File, Uploaded At, dan Uploaded By, serta tombol Upload Documents](./assets/09-tab-contract-documents.png)
+
+1. Ketuk **Upload Documents** untuk mengunggah dokumen baru.
+2. Ketuk ikon mata, unduh, atau tempat sampah di ujung kanan baris untuk melihat, mengunduh, atau menghapus dokumen tersebut.
+
+#### Extend Contract
+
+Ketuk tombol **Extend Contract** pada tab **Current Info** untuk membuka modal ini.
+
+![Modal Extend Contract menampilkan ringkasan Current Contract serta field New Contract Start dan End Contract](./assets/10-modal-extend-contract.png)
+
+> ℹ️ **Info:** Memperpanjang kontrak akan menandai kontrak yang sedang aktif sebagai expired, dan membuat kontrak baru yang terhubung dengannya.
+
+Modal ini menampilkan ringkasan **Current Contract** (Contract Number, Employee, Status, Employment Type, Start Date, End Date, Department, Position, Salary) yang tidak bisa diubah, diikuti dua field berikut.
+
+| Field | Wajib | Isi |
+| ------------------ | ----- | --- |
+| New Contract Start | Ya | Tanggal mulai kontrak baru. |
+| End Contract | Ya | Tanggal berakhir kontrak baru. |
+
+1. Isi **New Contract Start** dan **End Contract**.
+2. Ketuk **Save Changes** untuk membuat kontrak baru, atau **Cancel** untuk membatalkan.
+
 ## Hasil
 
-Anda bisa melihat seluruh data personal, kontak darurat, pendidikan, dan sertifikasi karyawan dari satu halaman, serta memantau kelengkapan datanya lewat indikator **Completion**.
+Anda bisa melihat seluruh data personal, kontak darurat, pendidikan, sertifikasi, serta data kepegawaian dan kontrak karyawan dari satu halaman, memantau kelengkapan datanya lewat indikator **Completion**, dan memperpanjang kontrak yang sedang aktif lewat **Extend Contract**.
 
 ## Lihat juga
 

@@ -677,7 +677,7 @@ details.faq .faq-body p:last-child{margin-bottom:0}
 <h3 id="navigasi-sisi-kiri">Navigasi sisi kiri</h3>
 <p>Halaman Employee Detail punya navigasi sisi kiri dengan empat menu.</p>
 <div class="table-wrap"><table><thead><tr><th>Menu</th><th>Keterangan</th></tr></thead><tbody><tr><td>Profile</td><td>Menampilkan seluruh data personal karyawan, terbagi dalam 4 tab.</td></tr><tr><td>Employment &amp; Contract</td><td>Menampilkan data kepegawaian dan kontrak karyawan.</td></tr><tr><td>Legal Document</td><td>Masih dalam pengembangan.</td></tr><tr><td>Leave</td><td>Masih dalam pengembangan.</td></tr></tbody></table></div>
-<p class="text-small">Detail Employment &amp; Contract, serta dokumentasi Legal Document dan Leave setelah tersedia, akan ditambahkan di pembaruan berikutnya.</p>
+<p class="text-small">Dokumentasi Legal Document dan Leave akan ditambahkan setelah fitur tersebut tersedia.</p>
 <h3 id="kartu-info-umum">Kartu info umum</h3>
 <p>Di atas keempat tab, ada kartu berisi info umum karyawan: foto profil, nama, NIP, dan status (misalnya <code>Active</code>), diikuti bagian <strong>Contact Details</strong> (Email, Phone, Address, Domicile) serta <strong>Completion</strong> yang menunjukkan persentase kelengkapan data dan tombol <strong>View Missing Data</strong>.</p>
 <p>Jika karyawan belum melakukan registrasi wajah, tag <strong>Face Not Registered</strong> dan tombol <strong>Register Face</strong> muncul di bawah foto profil.</p>
@@ -700,8 +700,30 @@ details.faq .faq-body p:last-child{margin-bottom:0}
 <p>Tab <strong>Certification</strong> menampilkan riwayat sertifikat karyawan: nama sertifikat, Institution, Level, Date, dan Document.</p>
 <figure class="doc-image"><img src="features/employee-management/assets/05-tab-certification.png" alt="Tab Certification menampilkan riwayat sertifikat dengan field Institution, Level, Date, dan Document" loading="lazy"></figure>
 <ol><li>Ketuk tombol <strong>Edit</strong> di pojok kanan atas untuk mengubah data pada tab ini.</li><li>Ketuk ikon mata di samping <strong>Document</strong> untuk melihat file sertifikat yang diunggah.</li></ol>
+<h3 id="employment-contract">Employment &amp; Contract</h3>
+<p>Menu <strong>Employment &amp; Contract</strong> menampilkan data kepegawaian dan kontrak karyawan, dengan tiga tab: <strong>Current Info</strong>, <strong>Contract History</strong>, dan <strong>Contract Documents</strong>. Di pojok kanan atas ada tombol <strong>Create New Contract</strong> dan menu titik tiga.</p>
+<h4 id="tab-current-info">Tab Current Info</h4>
+<p>Tab <strong>Current Info</strong> menampilkan dua kartu: <strong>Employment Summary</strong> dan <strong>Active Contract</strong>.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/07-tab-current-info.png" alt="Tab Current Info menampilkan kartu Employment Summary dan Active Contract, dengan tombol Create New Contract dan Extend Contract" loading="lazy"></figure>
+<div class="table-wrap"><table><thead><tr><th>Kartu</th><th>Field</th><th>Isi</th></tr></thead><tbody><tr><td>Employment Summary</td><td>Current Status</td><td>Status kepegawaian karyawan saat ini, misalnya <code>active</code>.</td></tr><tr><td>Employment Summary</td><td>Employment Type</td><td>Jenis hubungan kerja, misalnya <code>permanent</code>.</td></tr><tr><td>Employment Summary</td><td>Hire Date</td><td>Tanggal karyawan mulai bekerja.</td></tr><tr><td>Active Contract</td><td>Contract ID</td><td>Nomor kontrak aktif, disertai status.</td></tr><tr><td>Active Contract</td><td>Employment Type</td><td>Jenis kontrak.</td></tr><tr><td>Active Contract</td><td>Start Date</td><td>Tanggal kontrak mulai berlaku.</td></tr><tr><td>Active Contract</td><td>End Date</td><td>Tanggal kontrak berakhir.</td></tr><tr><td>Active Contract</td><td>Salary</td><td>Gaji pada kontrak ini, disamarkan secara default.</td></tr><tr><td>Active Contract</td><td>Department</td><td>Department karyawan pada kontrak ini.</td></tr><tr><td>Active Contract</td><td>Position</td><td>Jabatan karyawan pada kontrak ini.</td></tr></tbody></table></div>
+<ol><li>Ketuk ikon mata di samping <strong>Salary</strong> untuk menampilkan nominal gaji.</li><li>Ketuk <strong>Extend Contract</strong> untuk memperpanjang kontrak aktif.</li></ol>
+<h4 id="tab-contract-history">Tab Contract History</h4>
+<p>Tab <strong>Contract History</strong> menampilkan riwayat seluruh kontrak karyawan dalam bentuk tabel: Contract No, Type, Start Date, End Date, Status, dan Action.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/08-tab-contract-history.png" alt="Tab Contract History menampilkan tabel riwayat kontrak dengan kolom Contract No, Type, Start Date, End Date, Status, dan Action" loading="lazy"></figure>
+<ol><li>Ketuk ikon pada kolom <strong>Action</strong> untuk membuka detail kontrak tersebut.</li></ol>
+<h4 id="tab-contract-documents">Tab Contract Documents</h4>
+<p>Tab <strong>Contract Documents</strong> menampilkan dokumen kontrak yang sudah diunggah, dalam bentuk tabel: Type, File, Uploaded At, dan Uploaded By.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/09-tab-contract-documents.png" alt="Tab Contract Documents menampilkan tabel dokumen dengan kolom Type, File, Uploaded At, dan Uploaded By, serta tombol Upload Documents" loading="lazy"></figure>
+<ol><li>Ketuk <strong>Upload Documents</strong> untuk mengunggah dokumen baru.</li><li>Ketuk ikon mata, unduh, atau tempat sampah di ujung kanan baris untuk melihat, mengunduh, atau menghapus dokumen tersebut.</li></ol>
+<h4 id="extend-contract">Extend Contract</h4>
+<p>Ketuk tombol <strong>Extend Contract</strong> pada tab <strong>Current Info</strong> untuk membuka modal ini.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/10-modal-extend-contract.png" alt="Modal Extend Contract menampilkan ringkasan Current Contract serta field New Contract Start dan End Contract" loading="lazy"></figure>
+<blockquote class="callout callout-info">ℹ️ <strong>Info:</strong> Memperpanjang kontrak akan menandai kontrak yang sedang aktif sebagai expired, dan membuat kontrak baru yang terhubung dengannya.</blockquote>
+<p>Modal ini menampilkan ringkasan <strong>Current Contract</strong> (Contract Number, Employee, Status, Employment Type, Start Date, End Date, Department, Position, Salary) yang tidak bisa diubah, diikuti dua field berikut.</p>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Wajib</th><th>Isi</th></tr></thead><tbody><tr><td>New Contract Start</td><td>Ya</td><td>Tanggal mulai kontrak baru.</td></tr><tr><td>End Contract</td><td>Ya</td><td>Tanggal berakhir kontrak baru.</td></tr></tbody></table></div>
+<ol><li>Isi <strong>New Contract Start</strong> dan <strong>End Contract</strong>.</li><li>Ketuk <strong>Save Changes</strong> untuk membuat kontrak baru, atau <strong>Cancel</strong> untuk membatalkan.</li></ol>
 <h2 id="hasil">Hasil</h2>
-<p>Anda bisa melihat seluruh data personal, kontak darurat, pendidikan, dan sertifikasi karyawan dari satu halaman, serta memantau kelengkapan datanya lewat indikator <strong>Completion</strong>.</p>
+<p>Anda bisa melihat seluruh data personal, kontak darurat, pendidikan, sertifikasi, serta data kepegawaian dan kontrak karyawan dari satu halaman, memantau kelengkapan datanya lewat indikator <strong>Completion</strong>, dan memperpanjang kontrak yang sedang aktif lewat <strong>Extend Contract</strong>.</p>
 <h2 id="lihat-juga">Lihat juga</h2>
 <ul><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--README">Employee Management</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-list">Employee List</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--face-registration">Face Registration</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--edit-employee">Edit Employee</a></li></ul>
   </div>
