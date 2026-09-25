@@ -189,7 +189,9 @@ Tahap **Education** berisi riwayat pendidikan dan sertifikasi karyawan.
 | Major | Ya | Jurusan atau bidang studi. |
 | Graduated | Ya | Sakelar untuk menandai apakah karyawan sudah lulus dari jenjang ini. |
 | Start Year | Ya | Tahun mulai pendidikan. |
-| End Year | Tidak | Tahun selesai pendidikan. |
+| End Year | Ya, jika Graduated aktif | Tahun selesai pendidikan. |
+
+> ℹ️ **Info:** **End Year** wajib diisi jika **Graduated** aktif (karyawan sudah lulus). Jika belum lulus, **End Year** boleh dikosongkan.
 
 1. Isi data pada kartu **1st Education**.
 2. Ketuk **+ Add More Education History** jika ingin menambah riwayat pendidikan lain.

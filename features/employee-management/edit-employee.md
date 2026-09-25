@@ -89,7 +89,9 @@ Modal **Education Information** menampilkan satu kartu untuk setiap riwayat pend
 | Major | Tidak | Jurusan atau bidang studi. |
 | Graduated | Tidak | Kotak centang untuk menandai apakah karyawan sudah lulus dari jenjang ini. |
 | Start Year | Ya | Tahun mulai pendidikan. |
-| End Year | Ya | Tahun selesai pendidikan. |
+| End Year | Ya, jika Graduated dicentang | Tahun selesai pendidikan. |
+
+> ℹ️ **Info:** **End Year** wajib diisi jika **Graduated** dicentang (karyawan sudah lulus). Jika belum lulus, **End Year** boleh dikosongkan.
 
 1. Ubah data pada kartu pendidikan yang diperlukan.
 2. Ketuk ikon tempat sampah di pojok kanan atas kartu untuk menghapus riwayat tersebut, atau ikon panah untuk melipat (collapse) kartu.
