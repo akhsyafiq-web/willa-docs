@@ -729,14 +729,48 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <nav class="breadcrumb">Dokumentasi <span class="crumb-sep">/</span> Fitur <span class="crumb-sep">/</span> Employee Management</nav>
   <header class="page-header">
     <h1>Edit Employee</h1>
-    <p class="page-description">Panduan penggunaan Edit Employee.</p>
-    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role badge-muted">semua peran belum ditentukan</span></div>
+    <p class="page-description">Cara mengubah data karyawan lewat modal edit per tab.</p>
+    <div class="badges"><span class="badge badge-status status-published">published</span><span class="badge badge-role">hrd</span></div>
   </header>
   <div class="page-body">
-<blockquote class="callout callout-draft">🚧 <strong>Dokumentasi ini sedang dalam tahap pengembangan.</strong> Konten halaman ini akan segera ditambahkan.</blockquote>
+<p>Edit Employee dipakai untuk mengubah data karyawan yang sudah terdaftar, dilakukan dari halaman Employee Detail.</p>
+<h2 id="ringkasan">Ringkasan</h2>
+<p>Anda mengubah data karyawan per tab, sesuai kategori data yang ingin diubah: <strong>Personal</strong>, <strong>Emergency Contact</strong>, <strong>Education</strong>, atau <strong>Certification</strong>. Setiap tab punya tombol <strong>Edit</strong> sendiri yang membuka modal berisi form data tab tersebut.</p>
+<h2 id="sebelum-memulai">Sebelum memulai</h2>
+<ul><li>Anda sudah berada di halaman <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-detail">Employee Detail</a>, pada tab yang datanya ingin Anda ubah.</li></ul>
+<h2 id="langkah-langkah">Langkah-langkah</h2>
+<h3 id="buka-modal-edit">Buka modal edit</h3>
+<ol><li>Pada halaman Employee Detail, pilih tab yang ingin diubah: <strong>Personal</strong>, <strong>Emergency Contact</strong>, <strong>Education</strong>, atau <strong>Certification</strong>.</li><li>Ketuk tombol <strong>Edit</strong> di pojok kanan atas kartu.</li></ol>
+<figure class="doc-image"><img src="features/employee-management/assets/01-tombol-edit.png" alt="Tombol Edit di pojok kanan atas kartu" loading="lazy"></figure>
+<p>Modal edit untuk tab terkait terbuka.</p>
+<h3 id="edit-personal-information">Edit Personal Information</h3>
+<p>Modal <strong>Personal Information</strong> berisi seluruh data identitas dan kontak karyawan.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/02-modal-personal-information.png" alt="Modal Personal Information berisi field NIP, Full Name, Identity Card Type, Identity Number, Place of Birth, Date of Birth, Gender, Religion, Email, Phone Number, Department, Position, Marital Status, Address, dan Domicile" loading="lazy"></figure>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Wajib</th><th>Isi</th></tr></thead><tbody><tr><td>NIP</td><td>Ya</td><td>Nomor Induk Pegawai karyawan.</td></tr><tr><td>Full Name</td><td>Ya</td><td>Nama lengkap karyawan.</td></tr><tr><td>Identity Card Type</td><td>Ya</td><td>Jenis kartu identitas, dipilih dari daftar.</td></tr><tr><td>Identity Number</td><td>Ya</td><td>Nomor kartu identitas karyawan.</td></tr><tr><td>Place of Birth</td><td>Ya</td><td>Tempat lahir karyawan.</td></tr><tr><td>Date of Birth</td><td>Ya</td><td>Tanggal lahir karyawan.</td></tr><tr><td>Gender</td><td>Ya</td><td>Jenis kelamin karyawan, dipilih dari daftar.</td></tr><tr><td>Religion</td><td>Ya</td><td>Agama karyawan, dipilih dari daftar.</td></tr><tr><td>Email</td><td>Ya</td><td>Alamat email karyawan.</td></tr><tr><td>Phone Number</td><td>Ya</td><td>Nomor telepon karyawan.</td></tr><tr><td>Department</td><td>Ya</td><td>Department tempat karyawan bekerja, dipilih dari daftar.</td></tr><tr><td>Position</td><td>Ya</td><td>Jabatan karyawan, dipilih dari daftar.</td></tr><tr><td>Marital Status</td><td>Ya</td><td>Status pernikahan karyawan, dipilih dari daftar.</td></tr><tr><td>Address</td><td>Ya</td><td>Alamat karyawan.</td></tr><tr><td>Domicile</td><td>Tidak</td><td>Alamat domisili karyawan.</td></tr></tbody></table></div>
+<blockquote class="callout callout-info">ℹ️ <strong>Info:</strong> Field <strong>Email</strong> diberi keterangan "This email is used for login", karena email ini juga dipakai untuk login ke Willa PMS.</blockquote>
+<ol><li>Ubah field yang diperlukan.</li><li>Ketuk <strong>Save Changes</strong> untuk menyimpan, atau <strong>Cancel</strong> untuk membatalkan.</li></ol>
+<h3 id="edit-emergency-contact-information">Edit Emergency Contact Information</h3>
+<p>Modal <strong>Emergency Contact Information</strong> menampilkan satu kartu untuk setiap kontak darurat yang sudah ditambahkan.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/03-modal-emergency-contact.png" alt="Modal Emergency Contact Information dengan kartu 1st Contact berisi field Name, Relationship, Phone Number, dan Address" loading="lazy"></figure>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Wajib</th><th>Isi</th></tr></thead><tbody><tr><td>Name</td><td>Ya</td><td>Nama kontak darurat.</td></tr><tr><td>Relationship</td><td>Ya</td><td>Hubungan kontak dengan karyawan, dipilih dari daftar.</td></tr><tr><td>Phone Number</td><td>Ya</td><td>Nomor telepon kontak darurat.</td></tr><tr><td>Address</td><td>Ya</td><td>Alamat kontak darurat.</td></tr></tbody></table></div>
+<ol><li>Ubah data pada kartu kontak yang diperlukan.</li><li>Ketuk ikon tempat sampah di pojok kanan atas kartu untuk menghapus kontak tersebut, atau ikon panah untuk melipat (collapse) kartu.</li><li>Ketuk <strong>+ Add New Emergency Contact</strong> jika ingin menambah kontak darurat lain.</li><li>Ketuk <strong>Save Changes</strong> atau <strong>Cancel</strong>.</li></ol>
+<h3 id="edit-education-information">Edit Education Information</h3>
+<p>Modal <strong>Education Information</strong> menampilkan satu kartu untuk setiap riwayat pendidikan yang sudah ditambahkan.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/04-modal-education.png" alt="Modal Education Information dengan kartu S1 berisi field Institution, Institution Name, Major, Graduated, Start Year, dan End Year" loading="lazy"></figure>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Wajib</th><th>Isi</th></tr></thead><tbody><tr><td>Institution</td><td>Ya</td><td>Jenjang pendidikan, dipilih dari daftar, misalnya <code>S1</code>.</td></tr><tr><td>Institution Name</td><td>Ya</td><td>Nama institusi pendidikan.</td></tr><tr><td>Major</td><td>Tidak</td><td>Jurusan atau bidang studi.</td></tr><tr><td>Graduated</td><td>Tidak</td><td>Kotak centang untuk menandai apakah karyawan sudah lulus dari jenjang ini.</td></tr><tr><td>Start Year</td><td>Ya</td><td>Tahun mulai pendidikan.</td></tr><tr><td>End Year</td><td>Ya</td><td>Tahun selesai pendidikan.</td></tr></tbody></table></div>
+<ol><li>Ubah data pada kartu pendidikan yang diperlukan.</li><li>Ketuk ikon tempat sampah di pojok kanan atas kartu untuk menghapus riwayat tersebut, atau ikon panah untuk melipat (collapse) kartu.</li><li>Ketuk <strong>+ Add Education History</strong> jika ingin menambah riwayat pendidikan lain.</li><li>Ketuk <strong>Save Changes</strong> atau <strong>Cancel</strong>.</li></ol>
+<h3 id="edit-certification-information">Edit Certification Information</h3>
+<p>Modal <strong>Certification Information</strong> menampilkan satu kartu untuk setiap sertifikat yang sudah ditambahkan.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/05-modal-certification.png" alt="Modal Certification Information dengan kartu How to Lead Team berisi field Title, Institution Name, Date, Level, dan Upload Certification" loading="lazy"></figure>
+<div class="table-wrap"><table><thead><tr><th>Field</th><th>Wajib</th><th>Isi</th></tr></thead><tbody><tr><td>Title</td><td>Ya</td><td>Nama sertifikat.</td></tr><tr><td>Institution Name</td><td>Ya</td><td>Nama institusi penerbit sertifikat.</td></tr><tr><td>Date</td><td>Ya</td><td>Tanggal sertifikat diterbitkan.</td></tr><tr><td>Level</td><td>Ya</td><td>Tingkat sertifikasi, dipilih dari daftar.</td></tr><tr><td>Upload Certification</td><td>Tidak</td><td>Unggah file sertifikat, lalu ketuk tombol <strong>Upload</strong>.</td></tr></tbody></table></div>
+<ol><li>Ubah data pada kartu sertifikat yang diperlukan.</li><li>Ketuk ikon tempat sampah di pojok kanan atas kartu untuk menghapus sertifikat tersebut, atau ikon panah untuk melipat (collapse) kartu.</li><li>Ketuk <strong>+ Add Certification</strong> jika ingin menambah sertifikat lain.</li><li>Ketuk <strong>Save Changes</strong> atau <strong>Cancel</strong>.</li></ol>
+<h2 id="hasil">Hasil</h2>
+<p>Setelah menekan <strong>Save Changes</strong>, data pada tab terkait diperbarui dan langsung terlihat di halaman <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-detail">Employee Detail</a>.</p>
+<h2 id="lihat-juga">Lihat juga</h2>
+<ul><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--README">Employee Management</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-detail">Employee Detail</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--add-employee">Add Employee</a></li></ul>
   </div>
   <footer class="page-footer">
-    <span class="last-updated">Terakhir diperbarui: 2026-09-21</span>
+    <span class="last-updated">Terakhir diperbarui: 2026-09-25</span>
   </footer>
 </section>
 
