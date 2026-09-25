@@ -3,7 +3,7 @@ title: Add Employee
 description: Cara menambahkan karyawan baru melalui form bertahap.
 roles: [hrd]
 status: published
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 ---
 
 # Add Employee
@@ -226,7 +226,9 @@ Tahap **Summary** menampilkan ringkasan seluruh data yang sudah Anda isi, dikelo
 
 ## Hasil
 
-Setelah menekan **Submit** pada tahap Summary, karyawan baru tersimpan dan muncul di [Employee List](employee-list.md).
+Setelah menekan **Submit** pada tahap Summary, Willa PMS menampilkan notifikasi keberhasilan, dan karyawan baru tersimpan lalu muncul di [Employee List](employee-list.md).
+
+![Notifikasi "Employee created successfully" setelah karyawan baru berhasil disimpan](./assets/11-success-alert.png)
 
 ## Lihat juga
 
