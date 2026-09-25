@@ -737,14 +737,47 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <nav class="breadcrumb">Dokumentasi <span class="crumb-sep">/</span> Fitur <span class="crumb-sep">/</span> Employee Management</nav>
   <header class="page-header">
     <h1>Face Registration</h1>
-    <p class="page-description">Panduan penggunaan Face Registration.</p>
-    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role badge-muted">semua peran belum ditentukan</span></div>
+    <p class="page-description">Cara mendaftarkan data wajah karyawan lewat kamera perangkat.</p>
+    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role">hrd</span></div>
   </header>
   <div class="page-body">
-<blockquote class="callout callout-draft">🚧 <strong>Dokumentasi ini sedang dalam tahap pengembangan.</strong> Konten halaman ini akan segera ditambahkan.</blockquote>
+<p>Face Registration dipakai untuk mendaftarkan data wajah karyawan, menggunakan kamera perangkat Anda. Foto yang diambil otomatis menjadi foto profil karyawan setelah proses selesai.</p>
+<h2 id="ringkasan">Ringkasan</h2>
+<p>Registrasi dilakukan dalam 4 tahap berurutan: <strong>Foto 1</strong>, <strong>Foto 2</strong>, <strong>Foto 3</strong>, dan <strong>Konfirmasi</strong>. Setiap tahap pengambilan foto punya instruksi posisi wajah yang berbeda, ditampilkan langsung di layar.</p>
+<h2 id="sebelum-memulai">Sebelum memulai</h2>
+<ul><li>Perangkat Anda punya kamera yang berfungsi, dan mengizinkan akses kamera untuk Willa PMS.</li></ul>
+<h2 id="langkah-langkah">Langkah-langkah</h2>
+<h3 id="buka-face-registration">Buka Face Registration</h3>
+<p>Anda bisa membuka halaman ini dari dua tempat.</p>
+<ol><li>Dari <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-list">Employee List</a>: ketuk menu titik tiga (<strong>...</strong>) pada baris karyawan, lalu pilih <strong>Face Registration</strong>.</li><li>Dari <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-detail">Employee Detail</a>: ketuk tombol <strong>Register Face</strong> pada kartu info umum. Tombol ini hanya muncul jika wajah karyawan belum terdaftar.</li></ol>
+<p>Halaman <strong>Registrasi Wajah</strong> terbuka dan kamera perangkat aktif, menampilkan stepper 4 tahap: <strong>Foto 1</strong>, <strong>Foto 2</strong>, <strong>Foto 3</strong>, <strong>Konfirmasi</strong>.</p>
+<h3 id="ambil-foto-1">Ambil Foto 1</h3>
+<!-- 🖼️ IMAGE-HINT 01 — assets/01-foto1.png — Tampilan tahap Foto 1 pada Registrasi Wajah, dengan instruksi posisi wajah dan tombol Ambil Foto -->
+<ol><li>Posisikan wajah sesuai instruksi yang tampil di layar.</li><li>Ketuk <strong>Ambil Foto</strong>.</li></ol>
+<h3 id="ambil-foto-2">Ambil Foto 2</h3>
+<p>Tahap ini meminta Anda menoleh sedikit ke kanan.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/02-foto2-menoleh-kanan.png" alt="Tahap Foto 2 dengan instruksi "Sedikit menoleh ke kanan"" loading="lazy"></figure>
+<ol><li>Posisikan wajah sesuai instruksi <strong>Sedikit menoleh ke kanan</strong>.</li><li>Ketuk <strong>Ambil Foto</strong>.</li></ol>
+<h3 id="ambil-foto-3">Ambil Foto 3</h3>
+<p>Tahap ini meminta Anda menoleh sedikit ke kiri.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/03-foto3-menoleh-kiri.png" alt="Tahap Foto 3 dengan instruksi "Sedikit menoleh ke kiri"" loading="lazy"></figure>
+<ol><li>Posisikan wajah sesuai instruksi <strong>Sedikit menoleh ke kiri</strong>.</li><li>Ketuk <strong>Ambil Foto</strong>.</li></ol>
+<blockquote class="callout callout-info">ℹ️ <strong>Info:</strong> Ikuti instruksi posisi wajah yang tampil di setiap tahap — arah dan sudut wajah berbeda untuk setiap foto.</blockquote>
+<h3 id="konfirmasi">Konfirmasi</h3>
+<p>Setelah tiga foto diambil, tahap <strong>Konfirmasi</strong> menampilkan ketiga sampel foto wajah Anda.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/04-konfirmasi-sampel-foto.png" alt="Tahap Konfirmasi menampilkan 3 sampel foto wajah, dengan tombol Ulangi dan Simpan Data Wajah" loading="lazy"></figure>
+<p class="text-small">Foto pertama akan otomatis menjadi foto profil karyawan.</p>
+<ol><li>Periksa ketiga foto yang diambil.</li><li>Ketuk <strong>Ulangi</strong> jika ingin mengambil ulang seluruh foto, atau <strong>Simpan Data Wajah</strong> jika sudah sesuai.</li></ol>
+<h2 id="hasil">Hasil</h2>
+<p>Setelah menekan <strong>Simpan Data Wajah</strong>, sistem menampilkan notifikasi berhasil.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/05-notifikasi-berhasil.png" alt="Notifikasi berhasil setelah data wajah disimpan" loading="lazy"></figure>
+<p>Anda kembali ke halaman Employee Detail. Tag <strong>Face Not Registered</strong> dan tombol <strong>Register Face</strong> pada kartu info umum hilang, dan foto pertama otomatis menjadi foto profil karyawan.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/06-profil-setelah-registrasi.png" alt="Kartu karyawan setelah registrasi wajah selesai, dengan foto profil yang baru" loading="lazy"></figure>
+<h2 id="lihat-juga">Lihat juga</h2>
+<ul><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--README">Employee Management</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-list">Employee List</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-detail">Employee Detail</a></li></ul>
   </div>
   <footer class="page-footer">
-    <span class="last-updated">Terakhir diperbarui: 2026-09-21</span>
+    <span class="last-updated">Terakhir diperbarui: 2026-09-25</span>
   </footer>
 </section>
 
