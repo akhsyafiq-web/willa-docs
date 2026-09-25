@@ -2,7 +2,7 @@
 title: Face Registration
 description: Cara mendaftarkan data wajah karyawan lewat kamera perangkat.
 roles: [hrd]
-status: draft
+status: published
 last_updated: 2026-09-25
 ---
 
