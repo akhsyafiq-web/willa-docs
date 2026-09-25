@@ -660,14 +660,53 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <nav class="breadcrumb">Dokumentasi <span class="crumb-sep">/</span> Fitur <span class="crumb-sep">/</span> Employee Management</nav>
   <header class="page-header">
     <h1>Employee Detail</h1>
-    <p class="page-description">Panduan penggunaan Employee Detail.</p>
-    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role badge-muted">semua peran belum ditentukan</span></div>
+    <p class="page-description">Cara membaca halaman Employee Detail dan tab Profile karyawan.</p>
+    <div class="badges"><span class="badge badge-status status-published">published</span><span class="badge badge-role">hrd</span></div>
   </header>
   <div class="page-body">
-<blockquote class="callout callout-draft">🚧 <strong>Dokumentasi ini sedang dalam tahap pengembangan.</strong> Konten halaman ini akan segera ditambahkan.</blockquote>
+<p>Employee Detail menampilkan seluruh informasi lengkap satu karyawan, diakses dari halaman Employee List.</p>
+<h2 id="ringkasan">Ringkasan</h2>
+<p>Halaman ini terdiri dari navigasi sisi kiri (Profile, Employment &amp; Contract, Legal Document, Leave) dan, di dalam <strong>Profile</strong>, empat tab konten: Personal, Emergency Contact, Education, dan Certification.</p>
+<h2 id="sebelum-memulai">Sebelum memulai</h2>
+<ul><li>Anda sudah login sebagai HRD dan berada di halaman <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-list">Employee List</a>.</li></ul>
+<h2 id="langkah-langkah">Langkah-langkah</h2>
+<h3 id="buka-employee-detail">Buka Employee Detail</h3>
+<ol><li>Pada halaman Employee List, ketuk menu titik tiga (<strong>...</strong>) di baris karyawan yang dituju.</li><li>Pilih <strong>Detail</strong>.</li></ol>
+<figure class="doc-image"><img src="features/employee-management/assets/01-menu-titik-tiga-detail.png" alt="Menu titik tiga dengan opsi Detail disorot" loading="lazy"></figure>
+<p>Halaman <strong>Employee Detail</strong> terbuka.</p>
+<h3 id="navigasi-sisi-kiri">Navigasi sisi kiri</h3>
+<p>Halaman Employee Detail punya navigasi sisi kiri dengan empat menu.</p>
+<div class="table-wrap"><table><thead><tr><th>Menu</th><th>Keterangan</th></tr></thead><tbody><tr><td>Profile</td><td>Menampilkan seluruh data personal karyawan, terbagi dalam 4 tab.</td></tr><tr><td>Employment &amp; Contract</td><td>Menampilkan data kepegawaian dan kontrak karyawan.</td></tr><tr><td>Legal Document</td><td>Masih dalam pengembangan.</td></tr><tr><td>Leave</td><td>Masih dalam pengembangan.</td></tr></tbody></table></div>
+<p class="text-small">Detail Employment &amp; Contract, serta dokumentasi Legal Document dan Leave setelah tersedia, akan ditambahkan di pembaruan berikutnya.</p>
+<h3 id="kartu-info-umum">Kartu info umum</h3>
+<p>Di atas keempat tab, ada kartu berisi info umum karyawan: foto profil, nama, NIP, dan status (misalnya <code>Active</code>), diikuti bagian <strong>Contact Details</strong> (Email, Phone, Address, Domicile) serta <strong>Completion</strong> yang menunjukkan persentase kelengkapan data dan tombol <strong>View Missing Data</strong>.</p>
+<p>Jika karyawan belum melakukan registrasi wajah, tag <strong>Face Not Registered</strong> dan tombol <strong>Register Face</strong> muncul di bawah foto profil.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/02-tab-personal.png" alt="Kartu info umum karyawan dengan tag Face Not Registered dan tombol Register Face" loading="lazy"></figure>
+<p>Setelah registrasi wajah selesai, tag dan tombol tersebut hilang dari kartu.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/06-tab-personal-wajah-terdaftar.png" alt="Kartu info umum karyawan setelah wajah terdaftar, tanpa tag Face Not Registered maupun tombol Register Face" loading="lazy"></figure>
+<p class="text-small">Lihat <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--face-registration">Face Registration</a> untuk cara mendaftarkan wajah karyawan.</p>
+<h3 id="tab-personal">Tab Personal</h3>
+<p>Tab <strong>Personal</strong> menampilkan <strong>Identity Info</strong> karyawan: NIP, Identity Card Type, Place of Birth, Gender, Department, Marital Status, Full Name, Identity Number, Date of Birth, Religion, dan Position.</p>
+<ol><li>Ketuk tombol <strong>Edit</strong> di pojok kanan atas untuk mengubah data pada tab ini.</li></ol>
+<h3 id="tab-emergency-contact">Tab Emergency Contact</h3>
+<p>Tab <strong>Emergency Contact</strong> menampilkan kontak darurat karyawan: Name, Relationship, Phone, dan Address.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/03-tab-emergency-contact.png" alt="Tab Emergency Contact menampilkan kartu 1st Contact dengan field Name, Relationship, Phone, dan Address" loading="lazy"></figure>
+<ol><li>Ketuk tombol <strong>Edit</strong> di pojok kanan atas untuk mengubah data pada tab ini.</li></ol>
+<h3 id="tab-education">Tab Education</h3>
+<p>Tab <strong>Education</strong> menampilkan riwayat pendidikan karyawan: jenjang (misalnya <code>S1</code>), Institution, Major, Year, dan Status.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/04-tab-education.png" alt="Tab Education menampilkan riwayat pendidikan dengan field Institution, Major, Year, dan Status" loading="lazy"></figure>
+<ol><li>Ketuk tombol <strong>Edit</strong> di pojok kanan atas untuk mengubah data pada tab ini.</li></ol>
+<h3 id="tab-certification">Tab Certification</h3>
+<p>Tab <strong>Certification</strong> menampilkan riwayat sertifikat karyawan: nama sertifikat, Institution, Level, Date, dan Document.</p>
+<figure class="doc-image"><img src="features/employee-management/assets/05-tab-certification.png" alt="Tab Certification menampilkan riwayat sertifikat dengan field Institution, Level, Date, dan Document" loading="lazy"></figure>
+<ol><li>Ketuk tombol <strong>Edit</strong> di pojok kanan atas untuk mengubah data pada tab ini.</li><li>Ketuk ikon mata di samping <strong>Document</strong> untuk melihat file sertifikat yang diunggah.</li></ol>
+<h2 id="hasil">Hasil</h2>
+<p>Anda bisa melihat seluruh data personal, kontak darurat, pendidikan, dan sertifikasi karyawan dari satu halaman, serta memantau kelengkapan datanya lewat indikator <strong>Completion</strong>.</p>
+<h2 id="lihat-juga">Lihat juga</h2>
+<ul><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--README">Employee Management</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--employee-list">Employee List</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--face-registration">Face Registration</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--edit-employee">Edit Employee</a></li></ul>
   </div>
   <footer class="page-footer">
-    <span class="last-updated">Terakhir diperbarui: 2026-09-21</span>
+    <span class="last-updated">Terakhir diperbarui: 2026-09-25</span>
   </footer>
 </section>
 
