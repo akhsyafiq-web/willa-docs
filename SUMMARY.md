@@ -29,6 +29,7 @@
     * [Edit Employee](features/employee-management/edit-employee.md)
     * [Catatan Fitur](features/employee-management/catatan-fitur.md)
   * [Position Management](features/position-management/README.md)
+    * [Management Position](features/position-management/management-position.md)
     * [Catatan Fitur](features/position-management/catatan-fitur.md)
   * [Department Management](features/department-management/README.md)
     * [Management Department](features/department-management/management-department.md)
