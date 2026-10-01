@@ -12,7 +12,7 @@ Management Position menampilkan daftar seluruh position (jabatan) di Willa PMS, 
 
 ## Ringkasan
 
-Di halaman ini Anda bisa mencari position, menambah position baru lewat **Add Position**, dan mengubah position yang sudah ada lewat **Edit**. Setiap position terhubung ke satu department, dan opsional punya **Parent Position**.
+Di halaman ini Anda bisa mencari position, menambah position baru lewat **Add Position**, serta mengubah atau menghapus position yang sudah ada lewat menu aksi di tiap baris. Setiap position terhubung ke satu department, dan opsional punya **Parent Position**.
 
 ## Sebelum memulai
 
@@ -69,14 +69,23 @@ Di bawah tabel ada keterangan jumlah data dan navigasi halaman: **Previous**, no
 3. Pilih **Parent Position** jika position ini berada di bawah position lain pada department yang sama. Biarkan **None** jika position ini adalah top level position.
 4. Ketuk **Submit** untuk menyimpan, atau **Discard & Cancel** untuk membatalkan.
 
-### Ubah position yang sudah ada
+### Kelola position yang sudah ada
 
-Ketuk **Edit** pada menu aksi baris position yang ingin diubah. Dialog **Edit Position** terbuka, berisi data position tersebut.
+Setiap baris punya menu aksi (ikon titik tiga) pada kolom **Actions**.
+
+![Menu aksi baris position berisi Edit dan Delete](./assets/06-menu-aksi-baris.png)
+
+| Aksi | Fungsi |
+| ------ | --- |
+| Edit | Membuka dialog **Edit Position**, terisi data position tersebut, untuk diubah. |
+| Delete | Menghapus position tersebut. |
 
 ![Dialog Edit Position berisi data position yang akan diubah, dengan field Title, Department, dan Parent Position](./assets/05-dialog-edit-position.png)
 
-1. Ubah **Title**, **Department**, dan/atau **Parent Position** sesuai kebutuhan.
-2. Ketuk **Submit** untuk menyimpan, atau **Discard & Cancel** untuk membatalkan.
+1. Ketuk **Edit** untuk mengubah **Title**, **Department**, dan/atau **Parent Position**, lalu **Submit** untuk menyimpan atau **Discard & Cancel** untuk membatalkan.
+2. Ketuk **Delete** untuk menghapus position.
+
+> ⚠️ **Perhatian:** Hapus position hanya jika sudah tidak dipakai. Periksa dulu apakah position tersebut masih menjadi **Parent Position** bagi position lain, atau masih dipakai karyawan.
 
 ## Hasil
 

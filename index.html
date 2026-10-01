@@ -973,7 +973,7 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <div class="page-body">
 <p>Management Position menampilkan daftar seluruh position (jabatan) di Willa PMS, sekaligus tempat menambah dan mengubah position.</p>
 <h2 id="ringkasan">Ringkasan</h2>
-<p>Di halaman ini Anda bisa mencari position, menambah position baru lewat <strong>Add Position</strong>, dan mengubah position yang sudah ada lewat <strong>Edit</strong>. Setiap position terhubung ke satu department, dan opsional punya <strong>Parent Position</strong>.</p>
+<p>Di halaman ini Anda bisa mencari position, menambah position baru lewat <strong>Add Position</strong>, serta mengubah atau menghapus position yang sudah ada lewat menu aksi di tiap baris. Setiap position terhubung ke satu department, dan opsional punya <strong>Parent Position</strong>.</p>
 <h2 id="sebelum-memulai">Sebelum memulai</h2>
 <ul><li>Anda login sebagai HRD.</li><li>Department yang akan dipakai sudah terdaftar, lihat <a href="javascript:void(0)" class="int-link" data-page="features--department-management--management-department">Management Department</a>.</li></ul>
 <h2 id="langkah-langkah">Langkah-langkah</h2>
@@ -994,10 +994,13 @@ details.faq .faq-body p:last-child{margin-bottom:0}
 <figure class="doc-image"><img src="features/position-management/assets/04-dropdown-parent-position.png" alt="Dropdown Parent Position berisi daftar position yang sudah ada untuk dipilih sebagai atasan" loading="lazy"></figure>
 <blockquote class="callout callout-info">ℹ️ <strong>Info:</strong> Jika <strong>Parent Position</strong> dibiarkan kosong (<code>None</code>), position tersebut dianggap sebagai top level position di department yang dipilih.</blockquote>
 <ol><li>Isi <strong>Title</strong>.</li><li>Pilih <strong>Department</strong>.</li><li>Pilih <strong>Parent Position</strong> jika position ini berada di bawah position lain pada department yang sama. Biarkan <strong>None</strong> jika position ini adalah top level position.</li><li>Ketuk <strong>Submit</strong> untuk menyimpan, atau <strong>Discard &amp; Cancel</strong> untuk membatalkan.</li></ol>
-<h3 id="ubah-position-yang-sudah-ada">Ubah position yang sudah ada</h3>
-<p>Ketuk <strong>Edit</strong> pada menu aksi baris position yang ingin diubah. Dialog <strong>Edit Position</strong> terbuka, berisi data position tersebut.</p>
+<h3 id="kelola-position-yang-sudah-ada">Kelola position yang sudah ada</h3>
+<p>Setiap baris punya menu aksi (ikon titik tiga) pada kolom <strong>Actions</strong>.</p>
+<figure class="doc-image"><img src="features/position-management/assets/06-menu-aksi-baris.png" alt="Menu aksi baris position berisi Edit dan Delete" loading="lazy"></figure>
+<div class="table-wrap"><table><thead><tr><th>Aksi</th><th>Fungsi</th></tr></thead><tbody><tr><td>Edit</td><td>Membuka dialog <strong>Edit Position</strong>, terisi data position tersebut, untuk diubah.</td></tr><tr><td>Delete</td><td>Menghapus position tersebut.</td></tr></tbody></table></div>
 <figure class="doc-image"><img src="features/position-management/assets/05-dialog-edit-position.png" alt="Dialog Edit Position berisi data position yang akan diubah, dengan field Title, Department, dan Parent Position" loading="lazy"></figure>
-<ol><li>Ubah <strong>Title</strong>, <strong>Department</strong>, dan/atau <strong>Parent Position</strong> sesuai kebutuhan.</li><li>Ketuk <strong>Submit</strong> untuk menyimpan, atau <strong>Discard &amp; Cancel</strong> untuk membatalkan.</li></ol>
+<ol><li>Ketuk <strong>Edit</strong> untuk mengubah <strong>Title</strong>, <strong>Department</strong>, dan/atau <strong>Parent Position</strong>, lalu <strong>Submit</strong> untuk menyimpan atau <strong>Discard &amp; Cancel</strong> untuk membatalkan.</li><li>Ketuk <strong>Delete</strong> untuk menghapus position.</li></ol>
+<blockquote class="callout callout-warning">⚠️ <strong>Perhatian:</strong> Hapus position hanya jika sudah tidak dipakai. Periksa dulu apakah position tersebut masih menjadi <strong>Parent Position</strong> bagi position lain, atau masih dipakai karyawan.</blockquote>
 <h2 id="hasil">Hasil</h2>
 <p>Position baru tersimpan dan muncul di daftar, siap dipilih sebagai <strong>Parent Position</strong> untuk position lain, maupun sebagai pilihan <strong>Position</strong> di fitur lain, misalnya saat menambah karyawan.</p>
 <h2 id="lihat-juga">Lihat juga</h2>
