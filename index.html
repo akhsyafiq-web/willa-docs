@@ -370,14 +370,47 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <nav class="breadcrumb">Dokumentasi <span class="crumb-sep">/</span> Fitur</nav>
   <header class="page-header">
     <h1>Presensi</h1>
-    <p class="page-description">Panduan penggunaan Presensi.</p>
-    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role badge-muted">semua peran belum ditentukan</span></div>
+    <p class="page-description">Cara melakukan check-in presensi harian di Willa PMS.</p>
+    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role">employee</span><span class="badge badge-role">hod</span><span class="badge badge-role">hrd</span></div>
   </header>
   <div class="page-body">
-<blockquote class="callout callout-draft">🚧 <strong>Dokumentasi ini sedang dalam tahap pengembangan.</strong> Konten halaman ini akan segera ditambahkan.</blockquote>
+<p>Presensi adalah halaman utama bagi Anda untuk melakukan check-in setiap hari kerja, menampilkan info shift hari ini dan riwayat kehadiran.</p>
+<h2 id="ringkasan">Ringkasan</h2>
+<p>Halaman <strong>Home</strong> menampilkan status shift hari ini dan tombol untuk check-in. Setelah check-in, Anda melalui proses verifikasi lewat kamera (selfie) dan lokasi (geofence) sebelum presensi tercatat.</p>
+<h2 id="siapa-yang-menggunakan">Siapa yang menggunakan</h2>
+<p>Semua peran — Employee, HOD, dan HRD — melakukan presensi lewat halaman ini.</p>
+<h2 id="prasyarat">Prasyarat</h2>
+<ul><li>Perangkat Anda punya kamera dan akses lokasi (GPS) yang aktif.</li><li>Anda berada di dalam area geofence lokasi kerja.</li><li>Wajah Anda sudah terdaftar di sistem oleh HRD. Lihat <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--face-registration">Face Registration</a>.</li></ul>
+<h2 id="langkah-langkah">Langkah-langkah</h2>
+<h3 id="buka-halaman-home">Buka halaman Home</h3>
+<ol><li>Buka Willa PMS. Halaman <strong>Home</strong> terbuka.</li></ol>
+<figure class="doc-image"><img src="features/attendance/assets/01-halaman-home.png" alt="Halaman Home menampilkan kartu shift hari ini dengan tombol Check-in Sekarang, kartu ringkasan Hadir/Terlambat/Absen, dan Riwayat Terakhir" loading="lazy"></figure>
+<p>Halaman Home terdiri dari beberapa bagian.</p>
+<div class="table-wrap"><table><thead><tr><th>Bagian</th><th>Isi</th></tr></thead><tbody><tr><td>Kartu shift</td><td>Status shift hari ini (misalnya belum ditentukan), status keterlambatan, dan tombol <strong>Check-in Sekarang</strong>.</td></tr><tr><td>Kartu ringkasan</td><td>Jumlah <strong>Hadir</strong>, <strong>Terlambat</strong>, dan <strong>Absen</strong> Anda.</td></tr><tr><td>Riwayat Terakhir</td><td>Daftar presensi terakhir, dengan jam <strong>Check In</strong> dan <strong>Check Out</strong> per tanggal. Ketuk <strong>Lihat Semua</strong> untuk melihat riwayat lengkap.</td></tr></tbody></table></div>
+<h3 id="mulai-check-in">Mulai check-in</h3>
+<ol><li>Ketuk <strong>Check-in Sekarang</strong> pada kartu shift.</li><li>Halaman <strong>Check In Presensi</strong> terbuka.</li></ol>
+<figure class="doc-image"><img src="features/attendance/assets/02-mulai-verifikasi.png" alt="Halaman Check In Presensi dengan tombol Mulai Verifikasi dan Batal" loading="lazy"></figure>
+<ol><li>Ketuk <strong>Mulai Verifikasi</strong> untuk melanjutkan, atau <strong>Batal</strong> untuk kembali ke halaman Home.</li></ol>
+<h3 id="berikan-izin-kamera-dan-lokasi">Berikan izin kamera dan lokasi</h3>
+<p>Jika izin belum pernah diberikan, dialog <strong>Izin Diperlukan</strong> muncul.</p>
+<figure class="doc-image"><img src="features/attendance/assets/03-dialog-izin.png" alt="Dialog Izin Diperlukan meminta akses Kamera dan Lokasi" loading="lazy"></figure>
+<div class="table-wrap"><table><thead><tr><th>Izin</th><th>Kegunaan</th></tr></thead><tbody><tr><td>Kamera</td><td>Untuk verifikasi wajah.</td></tr><tr><td>Lokasi</td><td>Untuk memvalidasi geofence.</td></tr></tbody></table></div>
+<blockquote class="callout callout-info">ℹ️ <strong>Info:</strong> Data kamera dan lokasi hanya dipakai untuk keperluan validasi presensi.</blockquote>
+<ol><li>Ketuk <strong>Izinkan dan Lanjutkan</strong> untuk memberikan izin, atau <strong>Kembali</strong> untuk membatalkan.</li></ol>
+<h3 id="ikuti-tahap-verifikasi">Ikuti tahap verifikasi</h3>
+<p>Verifikasi presensi terdiri dari tiga tahap: <strong>Selfie</strong>, <strong>Geofence</strong>, dan <strong>Result</strong>.</p>
+<figure class="doc-image"><img src="features/attendance/assets/04-tahap-selfie.png" alt="Tahap Selfie meminta Anda memposisikan wajah dalam area, dengan tombol Ambil Foto" loading="lazy"></figure>
+<ol><li>Posisikan wajah Anda dalam area sesuai instruksi di layar.</li><li>Ketuk <strong>Ambil Foto</strong>.</li></ol>
+<p class="text-small">Detail tahap Geofence dan Result akan ditambahkan di pembaruan berikutnya.</p>
+<h2 id="hasil">Hasil</h2>
+<p>Setelah seluruh tahap verifikasi selesai, presensi Anda tercatat dan muncul di <strong>Riwayat Terakhir</strong> pada halaman Home.</p>
+<h2 id="sub-fitur">Sub-fitur</h2>
+<ul><li><a href="javascript:void(0)" class="int-link" data-page="features--attendance--face-verification">Face Verification</a>: penjelasan lebih lanjut tentang verifikasi wajah saat presensi.</li><li><a href="javascript:void(0)" class="int-link" data-page="features--attendance--geofencing">Geofencing</a>: penjelasan lebih lanjut tentang validasi lokasi saat presensi.</li></ul>
+<h2 id="lihat-juga">Lihat juga</h2>
+<ul><li><a href="javascript:void(0)" class="int-link" data-page="features--README">Fitur</a></li><li><a href="javascript:void(0)" class="int-link" data-page="getting-started--peran-dan-hak-akses">Peran dan Hak Akses</a></li></ul>
   </div>
   <footer class="page-footer">
-    <span class="last-updated">Terakhir diperbarui: 2026-09-21</span>
+    <span class="last-updated">Terakhir diperbarui: 2026-10-01</span>
   </footer>
 </section>
 
