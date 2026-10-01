@@ -32,7 +32,6 @@
     * [Catatan Fitur](features/position-management/catatan-fitur.md)
   * [Department Management](features/department-management/README.md)
     * [Management Department](features/department-management/management-department.md)
-    * [Add Department](features/department-management/add-department.md)
     * [Catatan Fitur](features/department-management/catatan-fitur.md)
   * [Izin Keluar](features/exit-permit/README.md)
     * [Catatan Fitur](features/exit-permit/catatan-fitur.md)
