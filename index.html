@@ -372,22 +372,23 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <header class="page-header">
     <h1>Presensi</h1>
     <p class="page-description">Cara melakukan check-in presensi harian di Willa PMS.</p>
-    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role">employee</span><span class="badge badge-role">hod</span><span class="badge badge-role">hrd</span></div>
+    <div class="badges"><span class="badge badge-status status-published">published</span><span class="badge badge-role">employee</span><span class="badge badge-role">hod</span><span class="badge badge-role">hrd</span></div>
   </header>
   <div class="page-body">
-<p>Presensi adalah halaman utama bagi Anda untuk melakukan check-in setiap hari kerja, menampilkan info shift hari ini dan riwayat kehadiran.</p>
+<p>Presensi adalah fitur utama bagi Anda untuk melakukan check-in setiap hari kerja. Halaman ini menampilkan status shift hari ini dan riwayat kehadiran Anda.</p>
 <h2 id="ringkasan">Ringkasan</h2>
-<p>Halaman <strong>Home</strong> menampilkan status shift hari ini dan tombol untuk check-in. Setelah check-in, Anda melalui proses verifikasi lewat kamera (selfie) dan lokasi (geofence) sebelum presensi tercatat.</p>
+<p>Check-in presensi dimulai dari tombol pada halaman <strong>Home</strong>. Setelah menekan tombol tersebut, Anda melewati tiga tahap: <strong>Selfie</strong> untuk verifikasi wajah, <strong>Geofence</strong> untuk validasi lokasi, dan <strong>Result</strong> yang menampilkan hasil presensi. Presensi baru tercatat setelah seluruh tahap selesai.</p>
 <h2 id="siapa-yang-menggunakan">Siapa yang menggunakan</h2>
-<p>Semua peran — Employee, HOD, dan HRD — melakukan presensi lewat halaman ini.</p>
+<p>Semua peran — Employee, HOD, dan HRD — melakukan presensi lewat fitur ini.</p>
 <h2 id="prasyarat">Prasyarat</h2>
-<ul><li>Perangkat Anda punya kamera dan akses lokasi (GPS) yang aktif.</li><li>Anda berada di dalam area geofence lokasi kerja.</li><li>Wajah Anda sudah terdaftar di sistem oleh HRD. Lihat <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--face-registration">Face Registration</a>.</li></ul>
+<ul><li>Perangkat Anda memiliki kamera dan akses lokasi (GPS) yang aktif.</li><li>Anda berada di dalam area geofence lokasi kerja.</li><li>Wajah Anda sudah terdaftar di sistem oleh HRD. Lihat <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--face-registration">Face Registration</a>.</li><li>Anda sudah memiliki jadwal shift untuk hari tersebut. Lihat <a href="javascript:void(0)" class="int-link" data-page="features--shift-management--scheduling">Scheduling</a>.</li></ul>
 <h2 id="langkah-langkah">Langkah-langkah</h2>
 <h3 id="buka-halaman-home">Buka halaman Home</h3>
 <ol><li>Buka Willa PMS. Halaman <strong>Home</strong> terbuka.</li></ol>
-<figure class="doc-image"><img src="features/attendance/assets/01-halaman-home.png" alt="Halaman Home menampilkan kartu shift hari ini dengan tombol Check-in Sekarang, kartu ringkasan Hadir/Terlambat/Absen, dan Riwayat Terakhir" loading="lazy"></figure>
+<figure class="doc-image"><img src="features/attendance/assets/01-halaman-home.png" alt="Halaman Home menampilkan kartu sambutan, status shift hari ini, tombol Check-in Sekarang, kartu ringkasan Hadir Terlambat Absen, dan Riwayat Terakhir" loading="lazy"></figure>
 <p>Halaman Home terdiri dari beberapa bagian.</p>
-<div class="table-wrap"><table><thead><tr><th>Bagian</th><th>Isi</th></tr></thead><tbody><tr><td>Kartu shift</td><td>Status shift hari ini (misalnya belum ditentukan), status keterlambatan, dan tombol <strong>Check-in Sekarang</strong>.</td></tr><tr><td>Kartu ringkasan</td><td>Jumlah <strong>Hadir</strong>, <strong>Terlambat</strong>, dan <strong>Absen</strong> Anda.</td></tr><tr><td>Riwayat Terakhir</td><td>Daftar presensi terakhir, dengan jam <strong>Check In</strong> dan <strong>Check Out</strong> per tanggal. Ketuk <strong>Lihat Semua</strong> untuk melihat riwayat lengkap.</td></tr></tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>Bagian</th><th>Isi</th></tr></thead><tbody><tr><td>Kartu sambutan</td><td>Sapaan beserta tanggal hari ini.</td></tr><tr><td>Kartu shift</td><td>Status shift hari ini, misalnya <strong>Tidak ada shift hari ini</strong>, dan tombol <strong>Check-in Sekarang</strong>.</td></tr><tr><td>Kartu ringkasan</td><td>Jumlah <strong>Hadir</strong>, <strong>Terlambat</strong>, dan <strong>Absen</strong> Anda.</td></tr><tr><td>Riwayat Terakhir</td><td>Daftar presensi terakhir, dengan jam <strong>Check In</strong> dan <strong>Check Out</strong> per tanggal. Ketuk <strong>Lihat Semua</strong> untuk melihat riwayat lengkap.</td></tr></tbody></table></div>
+<p class="text-small">Jika Anda sudah check-in tetapi belum check-out, tombol pada kartu shift berubah menjadi <strong>Check-out Sekarang</strong>. Panduan check-out dibahas terpisah.</p>
 <h3 id="mulai-check-in">Mulai check-in</h3>
 <ol><li>Ketuk <strong>Check-in Sekarang</strong> pada kartu shift.</li><li>Halaman <strong>Check In Presensi</strong> terbuka.</li></ol>
 <figure class="doc-image"><img src="features/attendance/assets/02-mulai-verifikasi.png" alt="Halaman Check In Presensi dengan tombol Mulai Verifikasi dan Batal" loading="lazy"></figure>
@@ -399,19 +400,32 @@ details.faq .faq-body p:last-child{margin-bottom:0}
 <blockquote class="callout callout-info">ℹ️ <strong>Info:</strong> Data kamera dan lokasi hanya dipakai untuk keperluan validasi presensi.</blockquote>
 <ol><li>Ketuk <strong>Izinkan dan Lanjutkan</strong> untuk memberikan izin, atau <strong>Kembali</strong> untuk membatalkan.</li></ol>
 <h3 id="ikuti-tahap-verifikasi">Ikuti tahap verifikasi</h3>
-<p>Verifikasi presensi terdiri dari tiga tahap: <strong>Selfie</strong>, <strong>Geofence</strong>, dan <strong>Result</strong>.</p>
+<p>Verifikasi presensi terdiri dari tiga tahap yang ditampilkan pada indikator di bagian atas: <strong>Selfie</strong>, <strong>Geofence</strong>, dan <strong>Result</strong>.</p>
+<h4 id="selfie">Selfie</h4>
+<ol><li>Posisikan wajah Anda dalam area sesuai instruksi di layar. Pastikan pencahayaan cukup dan wajah terlihat jelas.</li></ol>
 <figure class="doc-image"><img src="features/attendance/assets/04-tahap-selfie.png" alt="Tahap Selfie meminta Anda memposisikan wajah dalam area, dengan tombol Ambil Foto" loading="lazy"></figure>
-<ol><li>Posisikan wajah Anda dalam area sesuai instruksi di layar.</li><li>Ketuk <strong>Ambil Foto</strong>.</li></ol>
-<p class="text-small">Detail tahap Geofence dan Result akan ditambahkan di pembaruan berikutnya.</p>
+<ol><li>Ketuk <strong>Ambil Foto</strong>.</li><li>Pratinjau foto tampil. Ketuk <strong>Ambil Lagi</strong> untuk memotret ulang, atau <strong>Lanjutkan</strong> untuk memakai foto tersebut.</li></ol>
+<figure class="doc-image"><img src="features/attendance/assets/05-konfirmasi-foto.png" alt="Pratinjau foto presensi dengan tombol Ambil Lagi dan Lanjutkan" loading="lazy"></figure>
+<p>Penjelasan lebih lanjut ada di halaman <a href="javascript:void(0)" class="int-link" data-page="features--attendance--face-verification">Face Verification</a>.</p>
+<h4 id="geofence">Geofence</h4>
+<p>Setelah foto dikonfirmasi, sistem memvalidasi wajah dan lokasi Anda secara bersamaan.</p>
+<figure class="doc-image"><img src="features/attendance/assets/06-validasi.png" alt="Layar Memvalidasi Wajah dan Lokasi" loading="lazy"></figure>
+<p>Penjelasan lebih lanjut ada di halaman <a href="javascript:void(0)" class="int-link" data-page="features--attendance--geofencing">Geofencing</a>.</p>
+<h4 id="result">Result</h4>
+<p>Layar hasil menampilkan status presensi Anda beserta ringkasan <strong>Kecocokan Wajah</strong> dan <strong>Lokasi</strong>.</p>
+<figure class="doc-image"><img src="features/attendance/assets/07-hasil.png" alt="Layar hasil presensi menampilkan status, kecocokan wajah, lokasi, dan tombol Ulangi check in" loading="lazy"></figure>
+<p>Jika presensi berhasil, layar menampilkan status keberhasilan dan presensi Anda tercatat.</p>
+<figure class="doc-image"><img src="features/attendance/assets/08-berhasil.png" alt="Layar hasil presensi berhasil" loading="lazy"></figure>
+<p>Jika presensi gagal, penyebabnya ditampilkan pada layar ini. Ketuk <strong>Ulangi check in</strong> untuk mencoba lagi dari tahap Selfie.</p>
 <h2 id="hasil">Hasil</h2>
-<p>Setelah seluruh tahap verifikasi selesai, presensi Anda tercatat dan muncul di <strong>Riwayat Terakhir</strong> pada halaman Home.</p>
+<p>Setelah seluruh tahap verifikasi berhasil, presensi Anda tercatat dan muncul di <strong>Riwayat Terakhir</strong> pada halaman Home.</p>
 <h2 id="sub-fitur">Sub-fitur</h2>
 <ul><li><a href="javascript:void(0)" class="int-link" data-page="features--attendance--face-verification">Face Verification</a>: penjelasan lebih lanjut tentang verifikasi wajah saat presensi.</li><li><a href="javascript:void(0)" class="int-link" data-page="features--attendance--geofencing">Geofencing</a>: penjelasan lebih lanjut tentang validasi lokasi saat presensi.</li></ul>
 <h2 id="lihat-juga">Lihat juga</h2>
-<ul><li><a href="javascript:void(0)" class="int-link" data-page="features--README">Fitur</a></li><li><a href="javascript:void(0)" class="int-link" data-page="getting-started--peran-dan-hak-akses">Peran dan Hak Akses</a></li></ul>
+<ul><li><a href="javascript:void(0)" class="int-link" data-page="features--README">Fitur</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--face-registration">Face Registration</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--shift-management--scheduling">Scheduling</a></li><li><a href="javascript:void(0)" class="int-link" data-page="getting-started--peran-dan-hak-akses">Peran dan Hak Akses</a></li></ul>
   </div>
   <footer class="page-footer">
-    <span class="last-updated">Terakhir diperbarui: 2026-10-01</span>
+    <span class="last-updated">Terakhir diperbarui: 2026-10-02</span>
   </footer>
 </section>
 
@@ -419,14 +433,36 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <nav class="breadcrumb">Dokumentasi <span class="crumb-sep">/</span> Fitur <span class="crumb-sep">/</span> Presensi</nav>
   <header class="page-header">
     <h1>Face Verification</h1>
-    <p class="page-description">Panduan penggunaan Face Verification.</p>
-    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role badge-muted">semua peran belum ditentukan</span></div>
+    <p class="page-description">Cara kerja verifikasi wajah saat check-in presensi.</p>
+    <div class="badges"><span class="badge badge-status status-published">published</span><span class="badge badge-role">employee</span><span class="badge badge-role">hod</span><span class="badge badge-role">hrd</span></div>
   </header>
   <div class="page-body">
-<blockquote class="callout callout-draft">🚧 <strong>Dokumentasi ini sedang dalam tahap pengembangan.</strong> Konten halaman ini akan segera ditambahkan.</blockquote>
+<p>Face Verification adalah tahap <strong>Selfie</strong> pada alur presensi. Sistem membandingkan foto yang Anda ambil dengan foto wajah yang tersimpan di sistem.</p>
+<h2 id="ringkasan">Ringkasan</h2>
+<p>Saat tahap Selfie berjalan, kamera aktif dan menampilkan panduan area wajah. Anda memotret wajah, meninjau pratinjau, lalu sistem mencocokkannya dengan data wajah Anda. Jika cocok, Anda lanjut ke validasi lokasi; jika tidak, presensi gagal dan bisa diulang.</p>
+<h2 id="sebelum-memulai">Sebelum memulai</h2>
+<ul><li>Wajah Anda sudah terdaftar oleh HRD. Lihat <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--face-registration">Face Registration</a>.</li><li>Anda memberikan izin kamera ketika diminta.</li><li>Anda berada di tempat dengan pencahayaan yang cukup.</li><li>Anda memakai presensi lewat <a href="javascript:void(0)" class="int-link" data-page="features--attendance--README">Presensi</a> dan sudah menekan <strong>Mulai Verifikasi</strong>.</li></ul>
+<h2 id="langkah-langkah">Langkah-langkah</h2>
+<h3 id="posisikan-wajah">Posisikan wajah</h3>
+<ol><li>Arahkan wajah ke kamera hingga berada di dalam area panduan.</li><li>Pastikan hanya satu wajah yang terlihat dan mata terbuka.</li></ol>
+<figure class="doc-image"><img src="features/attendance/assets/04-tahap-selfie.png" alt="Tahap Selfie meminta Anda memposisikan wajah dalam area, dengan tombol Ambil Foto" loading="lazy"></figure>
+<h3 id="ambil-dan-tinjau-foto">Ambil dan tinjau foto</h3>
+<ol><li>Ketuk <strong>Ambil Foto</strong>.</li><li>Periksa pratinjau foto.</li><li>Ketuk <strong>Ambil Lagi</strong> untuk memotret ulang, atau <strong>Lanjutkan</strong> untuk melanjutkan validasi.</li></ol>
+<figure class="doc-image"><img src="features/attendance/assets/05-konfirmasi-foto.png" alt="Pratinjau foto presensi dengan tombol Ambil Lagi dan Lanjutkan" loading="lazy"></figure>
+<h3 id="tunggu-hasil-pencocokan">Tunggu hasil pencocokan</h3>
+<p>Selama validasi, layar menampilkan <strong>Memvalidasi Wajah dan Lokasi</strong>. Hasil pencocokan wajah tampil pada bagian <strong>Kecocokan Wajah</strong> di layar Result.</p>
+<figure class="doc-image"><img src="features/attendance/assets/07-hasil.png" alt="Layar hasil presensi menampilkan status, kecocokan wajah, lokasi, dan tombol Ulangi check in" loading="lazy"></figure>
+<h2 id="hasil">Hasil</h2>
+<p>Jika wajah cocok, tahap ini selesai dan presensi berlanjut ke validasi lokasi. Jika wajah tidak cocok atau tidak terbaca, presensi gagal dan Anda dapat menekan <strong>Ulangi check in</strong>.</p>
+<h2 id="pesan-yang-sering-muncul">Pesan yang sering muncul</h2>
+<p>Pesan berikut tampil pada layar Result ketika verifikasi wajah bermasalah.</p>
+<div class="table-wrap"><table><thead><tr><th>Pesan</th><th>Arti dan tindakan</th></tr></thead><tbody><tr><td>Tidak Ada Wajah Terdeteksi</td><td>Wajah tidak masuk ke area panduan. Dekatkan wajah dan pastikan pencahayaan cukup.</td></tr><tr><td>Wajah Terdeteksi Lebih Dari Satu</td><td>Terdapat lebih dari satu wajah dalam kamera. Pastikan hanya Anda yang terlihat.</td></tr><tr><td>Mata Tidak Terdeteksi</td><td>Mata tidak terbaca. Pastikan wajah terlihat jelas dan tidak tertutup.</td></tr><tr><td>Mata Tertutup</td><td>Mata terdeteksi dalam kondisi tertutup. Buka mata saat memotret.</td></tr><tr><td>Wajah Tidak Cocok</td><td>Wajah tidak sesuai dengan data yang tersimpan. Coba ulangi dengan pencahayaan lebih baik.</td></tr><tr><td>Validasi Wajah Gagal</td><td>Terjadi kesalahan saat validasi. Coba kembali.</td></tr><tr><td>Layanan Validasi Wajah Bermasalah</td><td>Layanan sedang tidak tersedia. Tunggu beberapa saat lalu coba lagi.</td></tr></tbody></table></div>
+<blockquote class="callout callout-warning">⚠️ <strong>Perhatian:</strong> Jika <strong>Wajah Tidak Cocok</strong> terus muncul, laporkan ke HRD untuk memeriksa ulang data wajah Anda. Lihat <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--face-registration">Face Registration</a>.</blockquote>
+<h2 id="lihat-juga">Lihat juga</h2>
+<ul><li><a href="javascript:void(0)" class="int-link" data-page="features--attendance--README">Presensi</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--attendance--geofencing">Geofencing</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--employee-management--face-registration">Face Registration</a></li></ul>
   </div>
   <footer class="page-footer">
-    <span class="last-updated">Terakhir diperbarui: 2026-09-21</span>
+    <span class="last-updated">Terakhir diperbarui: 2026-10-02</span>
   </footer>
 </section>
 
@@ -434,14 +470,37 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <nav class="breadcrumb">Dokumentasi <span class="crumb-sep">/</span> Fitur <span class="crumb-sep">/</span> Presensi</nav>
   <header class="page-header">
     <h1>Geofencing</h1>
-    <p class="page-description">Panduan penggunaan Geofencing.</p>
-    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role badge-muted">semua peran belum ditentukan</span></div>
+    <p class="page-description">Cara kerja validasi lokasi saat check-in presensi.</p>
+    <div class="badges"><span class="badge badge-status status-published">published</span><span class="badge badge-role">employee</span><span class="badge badge-role">hod</span><span class="badge badge-role">hrd</span></div>
   </header>
   <div class="page-body">
-<blockquote class="callout callout-draft">🚧 <strong>Dokumentasi ini sedang dalam tahap pengembangan.</strong> Konten halaman ini akan segera ditambahkan.</blockquote>
+<p>Geofencing adalah validasi lokasi pada alur presensi. Sistem memeriksa apakah posisi Anda berada di dalam area kantor yang sudah ditentukan sebelum presensi dicatat.</p>
+<h2 id="ringkasan">Ringkasan</h2>
+<p>Saat tahap Geofence berjalan, sistem membaca titik lokasi perangkat Anda dan membandingkannya dengan area lokasi kerja. Jika Anda berada di dalam area, presensi lanjut dicatat; jika di luar area, presensi gagal. Validasi lokasi berjalan bersamaan dengan validasi wajah.</p>
+<h2 id="sebelum-memulai">Sebelum memulai</h2>
+<ul><li>Anda memberikan izin lokasi ketika diminta. Lihat <a href="javascript:void(0)" class="int-link" data-page="features--attendance--README">Presensi</a>.</li><li>GPS perangkat Anda aktif dan mendapat sinyal.</li><li>Anda berada di dalam area geofence lokasi kerja.</li></ul>
+<h2 id="langkah-langkah">Langkah-langkah</h2>
+<h3 id="aktifkan-izin-lokasi">Aktifkan izin lokasi</h3>
+<p>Jika izin belum pernah diberikan, dialog <strong>Izin Diperlukan</strong> muncul.</p>
+<ol><li>Ketuk <strong>Izinkan dan Lanjutkan</strong> pada dialog agar sistem dapat membaca lokasi Anda, atau <strong>Kembali</strong> untuk membatalkan.</li></ol>
+<figure class="doc-image"><img src="features/attendance/assets/03-dialog-izin.png" alt="Dialog Izin Diperlukan meminta akses Kamera dan Lokasi" loading="lazy"></figure>
+<h3 id="tunggu-validasi-lokasi">Tunggu validasi lokasi</h3>
+<p>Setelah foto dikonfirmasi, layar menampilkan <strong>Memvalidasi Wajah dan Lokasi</strong>. Sistem memproses wajah dan lokasi Anda sekaligus.</p>
+<figure class="doc-image"><img src="features/attendance/assets/06-validasi.png" alt="Layar Memvalidasi Wajah dan Lokasi" loading="lazy"></figure>
+<h3 id="periksa-hasil-lokasi">Periksa hasil lokasi</h3>
+<p>Lokasi kantor yang terbaca tampil pada bagian <strong>Lokasi</strong> di layar Result.</p>
+<figure class="doc-image"><img src="features/attendance/assets/07-hasil.png" alt="Layar hasil presensi menampilkan status, kecocokan wajah, lokasi, dan tombol Ulangi check in" loading="lazy"></figure>
+<h2 id="hasil">Hasil</h2>
+<p>Jika lokasi Anda terbaca di dalam area kantor, validasi lokasi berhasil dan presensi dicatat. Jika di luar area, presensi gagal dan Anda dapat menekan <strong>Ulangi check in</strong>.</p>
+<h2 id="pesan-yang-sering-muncul">Pesan yang sering muncul</h2>
+<p>Pesan berikut tampil pada layar Result ketika validasi lokasi bermasalah.</p>
+<div class="table-wrap"><table><thead><tr><th>Pesan</th><th>Arti dan tindakan</th></tr></thead><tbody><tr><td>Di Luar Area Kantor</td><td>Anda terdeteksi di luar jangkauan area kantor. Dekatkan diri ke lokasi kerja lalu coba lagi.</td></tr><tr><td>Check-Out Gagal</td><td>Kondisi presensi tidak valid untuk check-out. Periksa status presensi Anda hari ini.</td></tr></tbody></table></div>
+<blockquote class="callout callout-info">ℹ️ <strong>Info:</strong> Jika lokasi tetap tidak terbaca, pastikan GPS aktif dan Anda memberi izin lokasi pada browser. Aktifkan mode lokasi presisi bila tersedia.</blockquote>
+<h2 id="lihat-juga">Lihat juga</h2>
+<ul><li><a href="javascript:void(0)" class="int-link" data-page="features--attendance--README">Presensi</a></li><li><a href="javascript:void(0)" class="int-link" data-page="features--attendance--face-verification">Face Verification</a></li></ul>
   </div>
   <footer class="page-footer">
-    <span class="last-updated">Terakhir diperbarui: 2026-09-21</span>
+    <span class="last-updated">Terakhir diperbarui: 2026-10-02</span>
   </footer>
 </section>
 
@@ -450,13 +509,18 @@ details.faq .faq-body p:last-child{margin-bottom:0}
   <header class="page-header">
     <h1>Catatan Fitur: Presensi</h1>
     <p class="page-description">Catatan Do &amp; Don't untuk fitur Presensi.</p>
-    <div class="badges"><span class="badge badge-status status-draft">draft</span><span class="badge badge-role badge-muted">semua peran belum ditentukan</span></div>
+    <div class="badges"><span class="badge badge-status status-published">published</span><span class="badge badge-role">employee</span><span class="badge badge-role">hod</span><span class="badge badge-role">hrd</span></div>
   </header>
   <div class="page-body">
-<blockquote class="callout callout-draft">🚧 <strong>Dokumentasi ini sedang dalam tahap pengembangan.</strong> Konten halaman ini akan segera ditambahkan.</blockquote>
+<h2 id="lakukan">Lakukan</h2>
+<ul><li>✅ Pastikan wajah Anda sudah terdaftar oleh HRD sebelum melakukan presensi, karena verifikasi wajah membandingkan foto Anda dengan data yang tersimpan.</li><li>✅ Presensi di tempat dengan pencahayaan yang cukup dan muka menghadap kamera secara langsung agar wajah mudah terbaca.</li><li>✅ Aktifkan GPS dan berikan izin lokasi pada browser supaya validasi geofence berjalan lancar.</li><li>✅ Lakukan presensi di dalam area kantor yang sudah ditentukan.</li><li>✅ Periksa pratinjau foto sebelum menekan <strong>Lanjutkan</strong>; gunakan <strong>Ambil Lagi</strong> bila hasil foto kurang jelas.</li><li>✅ Jika presensi gagal, baca pesan pada layar Result lalu tekan <strong>Ulangi check in</strong> untuk mencoba kembali.</li></ul>
+<h2 id="jangan">Jangan</h2>
+<ul><li>❌ Jangan menutup halaman atau berpindah aplikasi saat layar menampilkan <strong>Memvalidasi Wajah dan Lokasi</strong>, karena proses verifikasi sedang berjalan.</li><li>❌ Jangan melakukan presensi saat ada orang lain dalam frame kamera; pastikan hanya satu wajah yang terdeteksi.</li><li>❌ Jangan memakai foto orang lain atau foto tampilan layar untuk presensi.</li><li>❌ Jangan menolak izin kamera atau lokasi; tanpa keduanya, presensi tidak dapat diproses.</li><li>❌ Jangan mengandalkan presensi di luar area kantor, karena sistem akan menolak dengan pesan <strong>Di Luar Area Kantor</strong>.</li></ul>
+<h2 id="catatan-tambahan">Catatan tambahan</h2>
+<ul><li>Panduan check-out belum tersedia dan akan ditambahkan pada pembaruan berikutnya.</li><li>Jika wajah terus ditolak, hubungi HRD untuk mendaftarkan ulang wajah Anda. Lihat <a href="javascript:void(0)" class="int-link" data-page="features--employee-management--face-registration">Face Registration</a>.</li></ul>
   </div>
   <footer class="page-footer">
-    <span class="last-updated">Terakhir diperbarui: 2026-09-21</span>
+    <span class="last-updated">Terakhir diperbarui: 2026-10-02</span>
   </footer>
 </section>
 
