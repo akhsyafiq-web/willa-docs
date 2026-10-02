@@ -3,7 +3,7 @@ title: Scheduling
 description: Cara menyusun jadwal shift karyawan dalam rentang tanggal tertentu.
 roles: [hod]
 status: published
-last_updated: 2026-09-24
+last_updated: 2026-10-01
 ---
 
 # Scheduling
@@ -22,41 +22,63 @@ Halaman Scheduling menampilkan tabel dengan kolom **Karyawan** dan kolom tanggal
 
 ## Langkah-langkah
 
-### Buka halaman Scheduling
+### Buka halaman
 
 1. Dari menu navigasi, pilih **Scheduling**.
 2. Halaman **Scheduling** terbuka dan menampilkan tabel jadwal beserta kontrol di bagian atas.
 
 ![Halaman Scheduling menampilkan tabel dengan kolom Karyawan dan kolom tanggal, serta kontrol Period, Daily, All Departments, Bulk Schedule, dan periode](./assets/04-scheduling-grid.png)
 
-### Kenali kontrol halaman
+### Atur tampilan dan periode
 
-Sebelum menjadwalkan, kenali kontrol yang tersedia di bagian atas halaman.
+Di bagian atas halaman tersedia kontrol untuk mengatur cara jadwal ditampilkan. Anda bisa berpindah antara **Period** dan **Daily**, memfilter dengan **All Departments**, menyesuaikan periode, dan menekan **Today** untuk kembali ke jadwal hari ini.
 
-| Kontrol | Fungsi |
-| ------- | ------ |
-| Period / Daily | Mode tampilan jadwal. **Period** menampilkan rentang tanggal penuh, **Daily** menampilkan jadwal per hari. |
-| All Departments | Memfilter tabel hanya untuk department tertentu, atau menampilkan semua department. |
-| Bulk Schedule | Menetapkan shift untuk banyak karyawan sekaligus. |
-| Today | Melompat ke jadwal tanggal hari ini. |
-| Periode | Menentukan rentang tanggal yang ditampilkan, misalnya `21-30 September 2026`. |
+#### Period
 
-### Baca tabel jadwal
+**Period** menampilkan rentang tanggal penuh dalam satu tabel. Tiap karyawan punya satu baris dengan satu kolom untuk setiap tanggal pada periode tersebut.
 
-Tabel jadwal terdiri dari dua bagian.
+![Tampilan Period menampilkan jadwal karyawan dalam rentang tanggal penuh](./assets/12-period-view.png)
 
-| Bagian | Isi |
-| ------ | --- |
-| Kolom Karyawan | Inisial, nama, dan department tiap karyawan. |
-| Kolom tanggal | Satu kolom untuk setiap tanggal pada periode, misalnya `Mon 21` dan `Tue 22`. |
+#### Daily
 
-Setiap sel tanggal berisi tombol yang membuka daftar shift. Jika shift type belum dibuat untuk department tersebut, tombol ini tidak aktif dan jadwal tidak bisa diisi.
+**Daily** menampilkan jadwal per hari. Tampilan ini memudahkan Anda melihat siapa saja yang bertugas pada satu tanggal tertentu.
 
-### Isi shift pada sel tanggal
+![Tampilan Daily menampilkan jadwal karyawan per hari](./assets/13-daily-view.png)
 
-1. Ketuk tombol di dalam sel tanggal untuk karyawan yang dituju.
+### Pahami informasi jadwal
+
+Sebelum mengisi jadwal, pahami informasi yang tampil pada tabel.
+
+#### Employee
+
+Kolom karyawan menampilkan inisial, nama, dan department tiap karyawan.
+
+#### Department
+
+Department menentukan shift mana yang tersedia untuk dijadwalkan. Gunakan **All Departments** untuk membatasi tabel pada satu department.
+
+#### Shift
+
+Setiap sel tanggal menampilkan shift yang sudah ditetapkan. Sel yang belum diisi masih kosong dan siap dijadwalkan.
+
+#### Status
+
+Selain shift, sel tanggal bisa menampilkan status khusus seperti **Day Off** untuk hari libur.
+
+### Assign shift
+
+Penugasan shift dilakukan oleh HOD langsung pada sel tanggal karyawan.
+
+#### Pilih employee dan tanggal
+
+1. Cari baris karyawan yang dituju.
+2. Tentukan tanggal pada kolom tanggal yang sesuai.
+
+#### Pilih shift
+
+1. Ketuk tombol di dalam sel tanggal untuk karyawan tersebut.
 2. Daftar shift yang tersedia terbuka.
-3. Pilih shift yang ingin ditetapkan pada tanggal tersebut.
+3. Pilih shift yang ingin ditetapkan.
 
 ![Daftar shift pada sel tanggal berisi shift type yang tersedia, Day Off, dan Unassign](./assets/05-shift-dropdown.png)
 
@@ -67,7 +89,13 @@ Selain shift type yang sudah dibuat, daftar ini selalu menyediakan dua pilihan.
 | Day Off | Menandai karyawan libur pada tanggal tersebut. |
 | Unassign | Menghapus shift yang sudah ditetapkan pada sel tersebut. |
 
-### Jadwalkan banyak karyawan sekaligus
+#### Simpan assignment
+
+Setelah shift dipilih, sel tanggal langsung diperbarui. Ulangi langkah yang sama untuk tanggal dan karyawan lain, atau ketuk **Today** untuk kembali ke jadwal hari ini.
+
+### Bulk schedule
+
+Gunakan **Bulk Schedule** untuk menetapkan shift yang sama kepada banyak karyawan sekaligus.
 
 1. Ketuk **Bulk Schedule**.
 2. Dialog **Bulk Scheduling** terbuka.
@@ -83,13 +111,27 @@ Selain shift type yang sudah dibuat, daftar ini selalu menyediakan dua pilihan.
 | Select an employee for this shift | Daftar karyawan yang bisa dipilih. Centang satu atau lebih. |
 | Selected employee | Karyawan yang sudah dipilih, beserta jumlahnya. |
 
-4. Ketuk **Assign Shift** untuk menyimpan, atau **Cancel** untuk membatalkan.
+#### Pilih employee
 
-### Atur filter dan periode
+Centang satu atau beberapa karyawan pada daftar **Select an employee for this shift**. Karyawan yang dipilih tampil pada bagian **Selected employee**.
 
-1. Pilih **All Departments** untuk membatasi tabel pada satu department.
-2. Sesuaikan periode untuk menampilkan rentang tanggal lain.
-3. Ketuk **Today** untuk kembali ke jadwal hari ini.
+#### Tentukan periode
+
+Isi **Date Range** dengan rentang tanggal yang akan dijadwalkan.
+
+#### Pilih shift
+
+Pilih **Shift Type** yang akan ditetapkan kepada karyawan terpilih.
+
+#### Simpan schedule
+
+Ketuk **Assign Shift** untuk menyimpan, atau **Cancel** untuk membatalkan. Shift terpasang pada semua tanggal dalam rentang untuk karyawan yang dipilih.
+
+### Tangani konflik jadwal
+
+Satu karyawan tidak boleh memiliki dua shift yang saling bertumpang tindih pada waktu yang sama. Sebelum menyimpan, periksa sel tanggal yang bertanda konflik agar jadwal tetap konsisten.
+
+> ⚠️ **Perhatian:** Assignment yang menimbulkan konflik jadwal ditandai sebelum disimpan. Selesaikan konflik terlebih dahulu agar shift tidak saling bertumpang tindih.
 
 ## Hasil
 

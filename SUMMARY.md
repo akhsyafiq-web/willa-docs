@@ -17,7 +17,7 @@
     * [Geofencing](features/attendance/geofencing.md)
     * [Catatan Fitur](features/attendance/catatan-fitur.md)
   * [Shift Management](features/shift-management/README.md)
-    * [Shift Type](features/shift-management/shift-type.md)
+    * [Shift Type (Master Shift)](features/shift-management/shift-type.md)
     * [Scheduling](features/shift-management/scheduling.md)
     * [Log History](features/shift-management/log-history.md)
     * [Catatan Fitur](features/shift-management/catatan-fitur.md)

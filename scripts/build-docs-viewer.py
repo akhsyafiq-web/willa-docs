@@ -399,6 +399,7 @@ main#content{flex:1;max-width:820px;padding:36px 40px 80px;min-width:0}
 #toc a{display:block;padding:5px 0 5px 12px;font-size:13px;color:var(--text-muted);border-left:2px solid transparent;margin-left:-2px}
 #toc a.active{color:var(--primary);border-left-color:var(--primary);font-weight:600}
 #toc a.toc-h3{padding-left:24px;font-size:12.5px}
+#toc a.toc-h4{padding-left:36px;font-size:12px}
 
 .breadcrumb{font-size:13px;color:var(--text-muted);margin-bottom:14px}
 .crumb-sep{color:var(--text-faint);margin:0 2px}
@@ -538,13 +539,13 @@ function buildTOC(section){
   const list = document.getElementById('toc-list');
   list.innerHTML = '';
   if(!section) return;
-  const heads = $all('.page-body h2, .page-body h3', section);
+  const heads = $all('.page-body h2, .page-body h3, .page-body h4', section);
   heads.forEach(function(h){
     const li = document.createElement('li');
     const a = document.createElement('a');
     a.href = 'javascript:void(0)';
     a.textContent = h.textContent;
-    a.className = h.tagName === 'H3' ? 'toc-h3' : '';
+    a.className = h.tagName === 'H3' ? 'toc-h3' : (h.tagName === 'H4' ? 'toc-h4' : '');
     a.addEventListener('click', function(){ h.scrollIntoView({behavior:'smooth', block:'start'}); });
     li.appendChild(a);
     list.appendChild(li);

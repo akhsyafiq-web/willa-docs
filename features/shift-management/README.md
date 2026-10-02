@@ -1,7 +1,7 @@
 ---
 title: Shift Management
 description: Panduan penggunaan fitur Shift Management untuk peran HOD.
-roles: [hod]
+roles: [hod,hrd]
 status: published
 last_updated: 2026-09-24
 ---
