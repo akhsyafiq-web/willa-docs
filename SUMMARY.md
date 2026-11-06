@@ -34,12 +34,12 @@
     * [Management Department](features/department-management/management-department.md)
   * [Izin Keluar](features/exit-permit/README.md)
     * [Catatan Fitur](features/exit-permit/catatan-fitur.md)
-  * [Izin Sakit](features/sick-leave/README.md)
-    * [Catatan Fitur](features/sick-leave/catatan-fitur.md)
+  * [Leave](features/leave/README.md)
+    * [Leave Request](features/leave/leave-request.md)
+    * [Leave Approval](features/leave/leave-approval.md)
+    * [Catatan Fitur](features/leave/catatan-fitur.md)
   * [Holiday Management](features/holiday-management/README.md)
     * [Catatan Fitur](features/holiday-management/catatan-fitur.md)
-  * [Leave Management](features/leave-management/README.md)
-    * [Catatan Fitur](features/leave-management/catatan-fitur.md)
 
 ## Akun & Pengaturan
 

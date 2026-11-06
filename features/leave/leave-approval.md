@@ -1,12 +1,12 @@
 ---
-title: Izin Sakit
-description: Panduan penggunaan Izin Sakit.
+title: Leave Approval
+description: Panduan penggunaan Leave Approval.
 roles: []
 status: draft
-last_updated: 2026-09-21
+last_updated: 2026-11-06
 ---
 
-# Izin Sakit
+# Leave Approval
 
 > 🚧 **Dokumentasi ini sedang dalam tahap pengembangan.**
 > Konten halaman ini akan segera ditambahkan.
